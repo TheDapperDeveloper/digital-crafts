@@ -38,6 +38,14 @@ while userAns != "q":
         delTask = input("Enter the number of the task you would like to delete.")
         del toDoList[int(delTask)]
         print(toDoList)
+    elif userAns == "3":
+       taskDict = {}
+       taskDict = toDoList
+       count = 1
+       for todo in toDoList:
+           print("%d - %s" % (count, todo))
+           count += 1
+       
         #Show user all the tasks along with the index number of each task. User can then enter the index number of the task to delete the task.
 
         #see if github works
