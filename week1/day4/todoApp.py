@@ -27,12 +27,17 @@ while userAns != "q":
         addTask = input("\nWhat is the task ")
         addPriority = input("\nWhat is the priority, high, medium, or low? ")
         print(addTask + " - " + addPriority)
-        toDoList.append(addTask)
+        toDoList.append(addTask + " - " + addPriority)
         print(toDoList)
+        continue
     elif userAns == "2":
         count = 0
-        for toDo in toDoList:
-            print("%d: %s" % (count, toDo))
-        count += 2 #Show user all the tasks along with the index number of each task. User can then enter the index number of the task to delete the task.
+        for todo in toDoList:
+            print("%d: %s" % (count,todo))
+            count += 1
+        delTask = input("Enter the number of the task you would like to delete.")
+        del toDoList[int(delTask)]
+        print(toDoList)
+        #Show user all the tasks along with the index number of each task. User can then enter the index number of the task to delete the task.
 
         #see if github works
