@@ -34,17 +34,17 @@ while userAns != "q":
         break'''
 
 
-userAns=""
-
+userAns = ""
+toDoList = []
 
 print("Press 1 to add task")
 print("Press 2 to delete task")
 print("Press 3 to view all tasks")
-print("Press q to quit") 
+print("Press q to quit")
 
 userAns = input("\nWhat would you like to do?")
 
-if userAns == "q":
+if userAns != "q":
     def addTask():
         inputTask = input("\nWhat is the task?")
         inputPriority = input("\nWhat is the priority, high, medium, or low?")
