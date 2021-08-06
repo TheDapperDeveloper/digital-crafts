@@ -25,6 +25,7 @@ while userAns != "q":
     elif userAns == "3":
        taskDict = {}
        taskDict = toDoList
+       print(taskDict)
        count = 1
        for todo in toDoList:
            print("%d - %s" % (count, todo))
