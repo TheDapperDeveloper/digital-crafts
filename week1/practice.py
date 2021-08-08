@@ -19,10 +19,38 @@ print(result)
 
 def fahrenheit(celsius):
     return (celsius * 9/5) + 32
-result = fahrenheit(60)
-print(result)
+print (fahrenheit(39))
+
+# The formula to convert a temperature from Fahrenheit to Celsius is:
+#C = (F - 32) * 5/9
+# Write a function that takes a temperature in Fahrenheit, converts it to Celsius, and returns the value.
+
+def celsius(fahrenheit):
+   return (fahrenheit - 32) * 5/9
+print(celsius(102.2))
+
+#Write a function that accepts a number as an argument and returns a Boolean value. Return True if the number is even; return False if it is not even.
+
+def isEven(num1):
+    if num1 % 2 == 0:
+        return "True"
+    else:
+        print("False")
+#print(isEven(10))
+#print(isEven(7)) 
+
+#Write an is_odd function that uses your is_even function to determine if a number is odd. (That is, do not do the calculation - call a function that does the calculation.)
+#Hint: You'll use the not keyword.
+
+def isOdd(num1):
+  return not isEven
+print(isOdd(10))
 
 
+# Write a function that accepts a List of numbers as an argument.
+# Return a new List that includes the only the even numbers.
 
-
+def onlyEven(*aList):
+        return [isEven]
+print(onlyEven(2, 4, 6, 8))
 
