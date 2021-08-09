@@ -42,7 +42,7 @@ for number in range(1,101):
 array1 = [0,1,0,3,12]
 array2 = [1,7,0,0,8,0,10,12,0,4]
 
-array1.append(array1.pop(array1.index(0, 0)))
+array1.append(array1.pop(array1.index(0)))
 print(array1)
 
 

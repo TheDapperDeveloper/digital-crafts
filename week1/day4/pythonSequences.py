@@ -46,7 +46,7 @@ todoList = ["learn Python", "study", "go to the post office", "become engineer",
 
 #For Loop - shorter cleaner way to write while loop - You don't have to worry about infinite loops
 
-#for item in todoList:
+#for item in todoList: (for single item in list of items)
   #  print(item)
    
 #Modify Lists
@@ -54,7 +54,7 @@ todoList = ["learn Python", "study", "go to the post office", "become engineer",
 # todoList[1] = "sleep"
 # print(todoList)
 
-#Add to list append adds element to list
+#Add to list append adds element to list (end of list)
 #todoList.append("have fun")
 #print(todoList)
 
