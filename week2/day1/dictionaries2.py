@@ -17,7 +17,7 @@ superhero = {
 #Example 1
 
 #if superhero.get("club") == None:
-    #superhero["club"] = "Justice League" # to add a kay and assign it a value
+    #superhero["club"] = "Justice League" # to add a key and assign it a value
 
 #print(superhero)
 
