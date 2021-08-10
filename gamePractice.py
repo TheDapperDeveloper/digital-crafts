@@ -31,14 +31,14 @@ print("Press 6 to check Wolf's health")
    # print("Press 6 to check Wolf's health")
 
 userAns = input("\nWhat would you like to do? ")
-if userAns == "1":
-    character1.takeDamage(30)
-print("Oh no! Health is down to 20.")
-input("What would you like to do next?")
-elif userAns == "2":
-character2.takeDamage(50)
-print("The wolf's health decreased to 30")
-input("What would you like to do next?")
+    if userAns == "1":
+        character1.takeDamage(30)
+        print("Oh no! Health is down to 20.")
+        input("What would you like to do next?")
+    elif userAns == "2":
+        character2.takeDamage(50)
+        print("The wolf's health decreased to 30")
+        input("What would you like to do next?")
 
         
 
