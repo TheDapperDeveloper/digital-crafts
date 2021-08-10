@@ -35,8 +35,8 @@ if userAns == "1":
     character1.takeDamage(30)
 print("Oh no! Health is down to 20.")
 input("What would you like to do next?")
-if userAns == "2":
-    character2.takeDamage(50)
+elif userAns == "2":
+character2.takeDamage(50)
 print("The wolf's health decreased to 30")
 input("What would you like to do next?")
 
