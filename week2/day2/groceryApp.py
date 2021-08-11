@@ -1,30 +1,28 @@
-shoppingList = []
-
-class GroceryItems:
-    def __init__ (self, title, price, quantity):
-        self.title = title
-        self.price = price
-        self.quantity = quantity
-        self.groceryList = []
-    def thingsToBuy(self):
-        print("Item: " + self.title + "Price:$ " + self.price + "Quantity: " + self.quantity)
-
+class GroceryStore:
+    def __init__ (self, name, address):
+        self.name = name
+        self.address = address
        
-def newItems():
+def newStore():
     newList = input("\n What is the name and address of the store?")
-    shoppingList.append(newList)
-    print(shoppingList)
+    storeList.append(newList)
+    print(storeList)
     
 def addItems():
     count = 1
-    for items in shoppingList:
+    for items in storeList:
         print("%d: %s" % (count,items))
-        count +=1
+        count += 1
     addList = input("\nWhich list would you like to add to?")
-    shoppingList.append(addList)
+    storeList.append(addList)
 
-
-
+def viewItems():
+    count = 1
+    for items in storeList:
+        print ("%d: %s" % (count, items))
+        count += 1
+        
+storeList = []    
 userAns = ""
 while userAns != "q":
     print(""" Welcome to the shopping list app.
@@ -34,11 +32,18 @@ while userAns != "q":
     Press q to quit. """)
     userAns = input("\nWhat would you like to do? ")
     if userAns == "1":
-        newItems()
+        nameOfStore = input("what is the name of the store?")
+        addressOfStore = input("what is the address?")
+        store = GroceryStore(nameOfStore, addressOfStore)
+        storeList.append(store)
+        print(storeList)
     elif userAns == "2":
         addItems()
-        food = input("Enter title ", "price ", "and quantity")
-        food.thingsToBuy()
+    elif userAns =="3":
+        viewItems()
+    elif userAns == "q":
+        print("Thank you for using the Grocery App. Have a nice day!")
+
 
 
 
