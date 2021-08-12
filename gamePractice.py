@@ -35,7 +35,7 @@ character1 = Characters("Tara Loft", 50)
 character2 = Characters("Wolf", 80)
 wallet = Wallet("Tara Loft", 60)
 
-store = ["Food and Water - 20 coins ", "Medicine - 40 coins", "Magic Potion - 50 coins"]
+store =["Food and Water - 20 coins ", "Medicine - 40 coins", "Magic Potion - 50 coins"]
 
 userAns = ""
 
@@ -82,7 +82,8 @@ while startGame:
         for item in store:
             print("%d: %s" % (count,item))
             count += 1
-        if input("1"):
+        userChoice = input("Which item would you like to buy? Please enter 1, 2, or 3.\n")
+        if userChoice == "1":
             if wallet.coins < 20:
                 print("You do not have enough coins available")
             if wallet.coins >= 20:
@@ -90,7 +91,7 @@ while startGame:
                 wallet.purchaseItems(20)
                 print("Tara's health is " + str(character1.health))
                 print("You have " + str(wallet.coins) + " coins available.")
-        if input("2"):
+        if userChoice == "2":
             if wallet.coins < 40:
                 print("You do not have enough coins available")
             if wallet.coins >= 40:
@@ -98,7 +99,7 @@ while startGame:
                 wallet.purchaseItems(40)
                 print("Tara's health is " + str(character1.health))
                 print("You have " + str(wallet.coins) + " coins available.")
-        if input("3"):
+        if userChoice == "3":
             if wallet.coins < 50:
                 print("You do not have enough coins available")
             if wallet.coins >= 50:
