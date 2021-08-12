@@ -56,21 +56,18 @@ while startGame:
         if character1.health <= 0:
             print("Game Over.")
             startGame = False
-        #userAns = input("What would you like to do next?")
     elif userAns == "2":
         character2.takeDamage(50)
         print("The wolf's health decreased by 50")
         if character2.health <= 0:
             print("Congratulations! You win!")
             startGame = False
-        #userAns = input("What would you like to do next?")
     elif userAns == "3":
         character2.takeDamage(30)
         print("The wolf's health decreased by 30")
         if character2.health <= 0:
             print("Congratulations! You win!")
             startGame = False
-        #userAns = input("What would you like to do next?")
     elif userAns == "4":
         character1.takeDamage(50)
         print("The wolf caught you and mauled you to death. Game Over.")
@@ -111,10 +108,3 @@ while startGame:
                 print("You have " + str(wallet.coins) + " coins available.")
     elif userAns == "w":
         wallet.viewWallet()
-
-        #mainMenu = True
-            #while mainMenu:
-               # if wallet.coins < 50:
-                    #print("You do not have enough coins available")
-                    #mainMenu = False
-                    #print(viewMenu())
