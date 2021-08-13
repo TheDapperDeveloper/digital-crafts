@@ -109,3 +109,5 @@ while startGame:
                 print("You have " + str(wallet.coins) + " coins available.")
     elif userAns == "w":
         wallet.viewWallet()
+    else:
+        print("Please make a valid selection.")
