@@ -36,3 +36,9 @@ Elements:
     - The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
   - The <div> tag is easily styled by using the class or id attribute.
   - Any sort of content can be put inside the <div> tag! 
+
+# CSS - Cascading Style Sheets
+ - purely visual
+ - HTML Element - if you target element it will change every element
+ - ClassName - to target CSS with classes use . then the name
+ - Id to target CSS with ID use # then the name of the id

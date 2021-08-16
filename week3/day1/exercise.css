@@ -1,0 +1,12 @@
+.header-links {
+   position: absolute;
+   right: 0;
+}
+
+.main {
+    text-align: center;
+}
+
+.buttons {
+    float: center;
+}
