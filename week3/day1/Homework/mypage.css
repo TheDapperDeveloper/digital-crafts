@@ -23,7 +23,12 @@ ul {
     margin: 0 auto;
     color: #8C756A;
 }
+.business-name {
+    text-align: center;
+    color: #0292B7;
+}
 
-.python-video {
-    
+h3{
+    text-align: center;
+    color: #0292B7;
 }
