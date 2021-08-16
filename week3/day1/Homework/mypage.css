@@ -1,0 +1,29 @@
+html {
+    background-color: #DEE2EC;
+}
+
+.landing-photo {
+    margin-left: 750px;
+    width: 400px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0292B7;
+}
+
+.dev-info {
+    text-align: center;
+    color: #0292B7;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    color: #8C756A;
+}
+
+.python-video {
+    
+}
