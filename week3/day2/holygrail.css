@@ -1,0 +1,43 @@
+.HolyGrail {
+    display: flex;
+    min-height: 100 vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header {
+    background-color: orchid;
+    margin: 0;
+    border: 3px solid black;
+    width: 100%;
+}
+
+.content {
+    background-color: palegoldenrod;
+    margin: 0;
+    border: 3px solid black;
+    order: 2;
+    min-height: 80vh;
+}
+
+.menu {
+    background-color: palegreen;
+    margin: 0;
+    border: 3px solid black;
+    order: -1;
+    
+}
+
+.ad {
+    background-color: paleturquoise;
+    margin: 0;
+    border: 3px solid black;
+    order: 3;
+    flex: 1;
+}
+
+.footer{
+    background-color: palevioletred;
+    margin: 0;
+    border: 3px solid black;
+    width: 100%;
+}
