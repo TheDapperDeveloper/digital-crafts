@@ -1,8 +1,8 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    grid-template-rows: repeat(3, 500px);
-    margin: 5px;
-    background-color: black;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 15px;
+    justify-content: center;
+    align-content: end;
 }
-
