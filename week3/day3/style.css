@@ -1,0 +1,26 @@
+.red-box {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    margin: 5px;
+  }
+  .flex {
+    height: 200px;
+    display: flex;
+    border: 2px solid pink;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid violet;
+    margin: 5px;
+  }
+
+  /* Grid template can use px, fr(fraction)
+  /* Can use fractions in combination with px
+  /* use repeat function to enter number of colums and their size
+    /* repeat(5, 1fr)
+    
