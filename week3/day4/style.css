@@ -8,6 +8,16 @@
 
 .text-input {
     width: 200px;
+    padding-left: 14px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1.15px solid #b2b4c2;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: #b2b4c2;
 }
 
 .form-button {
@@ -19,6 +29,4 @@
     color: white;
     border: none;
     border-radius: 2px;
-
-
 }
