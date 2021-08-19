@@ -1,0 +1,41 @@
+ .collapse-navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.section-2{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.row-align-items-center {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    padding-bottom: 40px; 
+}
+
+idk {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+idk2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-3{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
