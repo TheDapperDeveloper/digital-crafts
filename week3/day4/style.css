@@ -1,0 +1,24 @@
+.form-styles {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-input {
+    width: 200px;
+}
+
+.form-button {
+    background-color: #ea4335;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+
+
+}
