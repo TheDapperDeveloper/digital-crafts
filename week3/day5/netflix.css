@@ -7,7 +7,7 @@ html {
     grid-template-columns: repeat(4, 400px);
     grid-template-rows: repeat(3, auto);
     grid-gap: 15px;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: end;
 }
 .popular1 {
