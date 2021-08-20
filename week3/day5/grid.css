@@ -1,0 +1,88 @@
+.grid {
+    display:grid;
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+.grid > div {
+    border: 1px solid white;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.two {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 7; 
+}
+
+.three {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+}
+
+.four {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;  
+}
+
+.five {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;  
+}
+
+.six {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;  
+}
+
+.seven {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;  
+}
+
+.eight {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 6;  
+}
+
+.nine {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;  
+}
+
+.ten {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 7;  
+}
+
+
+
+
+
+
+
