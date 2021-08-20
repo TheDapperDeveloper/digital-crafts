@@ -1,0 +1,34 @@
+.container-1 {
+    display: flex;
+    align-content: flex-start;
+}
+
+.container-1 div {
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.content {
+    height: 400px;
+    width: 300px;
+}
+
+.remcontent {
+    width: 500px;
+    height: 300px;
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+    content:' ';
+    display:block;
+    border-bottom:2px solid black;
+}
+
+.footer {
+    text-align: center;
+    display:center;
+    border-top:2px solid black; 
+    align-items: flex-end;
+}
