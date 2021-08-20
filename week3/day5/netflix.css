@@ -6,3 +6,137 @@
     justify-content: center;
     align-content: end;
 }
+.popular1 {
+    grid-column-start: 1;
+    grid-column-end:1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 300px;
+    width: 400px;
+}
+
+.popular2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 300px;
+    width: 400px;
+}
+
+.popular3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 300px;
+    width: 400px;
+}
+
+.popular4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 300px;
+    width: 400px;
+}
+
+.real1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 300px;
+    width: 400px;
+}
+
+.real2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 300px;
+    width: 400px;
+}
+
+.real3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 300px;
+    width: 400px;
+}
+
+.real4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    height: 300px;
+    width: 400px;
+}
+
+.favorite1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 300px;
+    width: 400px;
+}
+
+.favorite2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 300px;
+    width: 400px;
+}
+
+.favorite3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 300px;
+    width: 400px;
+}
+
+.favorite4 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 300px;
+    width: 400px;
+}
+
+nav {
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #cb1c11
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    float: right;
+    margin: 0px;
+}
+
+.join {
+    background-color: #cb1c11;
+    border: none;
+    color: white;
+}
+
+.signin {
+    background-color: black;
+    border: white;
+    color: white;
+
+}
