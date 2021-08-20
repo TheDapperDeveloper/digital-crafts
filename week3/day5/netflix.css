@@ -9,6 +9,7 @@ html {
     grid-gap: 15px;
     justify-content: flex-start;
     align-content: end;
+    caption-side: bottom;
 }
 .popular1 {
     grid-column-start: 1;
@@ -53,6 +54,7 @@ html {
     grid-row-end: 2;
     height: 300px;
     width: 400px;
+    caption-side: bottom;
 }
 
 .real2 {
@@ -187,4 +189,20 @@ h3 {
     font-family: 'Bebas Neue';
     font-weight: bolder;
 }
+
+figcaption {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+    text-align: center;
+    caption-side: bottom;
+}
+
+caption {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+    text-align: center;
+}
+
 
