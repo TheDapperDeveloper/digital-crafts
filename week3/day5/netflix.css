@@ -1,3 +1,7 @@
+html {
+    background-color: #181818;
+}
+
 .images {
     display: grid;
     grid-template-columns: repeat(4, 400px);
@@ -118,7 +122,16 @@ nav {
     font-family: 'Bebas Neue';
     font-weight: bolder;
     font-size: xx-large;
-    color: #cb1c11
+    color: #cb1c11;
+    background-color: black;
+}
+
+nav li {
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+    font-size: small;
+    color: white;
+    padding: 5px;
 }
 
 ul {
@@ -132,11 +145,46 @@ ul {
     background-color: #cb1c11;
     border: none;
     color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 .signin {
     background-color: black;
     border: white;
     color: white;
+    margin: 0px;
+    padding: 0px;
 
 }
+
+h1 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+}
+
+h3 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+}
+
+.section1 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+}
+
+.section2 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+}
+
+.section3 {
+    color: white;
+    font-family: 'Bebas Neue';
+    font-weight: bolder;
+}
+
