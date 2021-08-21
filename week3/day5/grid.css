@@ -1,5 +1,8 @@
 .grid {
     display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 100vh;
     background-color: yellow;
     height: 300px;
     width: 300px;

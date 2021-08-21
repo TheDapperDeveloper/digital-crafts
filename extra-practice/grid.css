@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(7, 150px);
+    grid-gap: 20px;
+}
+
+.item1 {
+    background-color: #fcda04;
+    color: white;
+    grid-column: 1 / 4 ;
+    grid-row: 1 / 3;
+}
+
+.item2 {
+    background-color: #fcda04;
+    color: white;
+    grid-column: 1 / 1 ;
+    grid-row: 4 / 7;
+}
+
+
+
