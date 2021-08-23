@@ -61,9 +61,9 @@ function printSquare (num) {
 }
 console.log(printSquare (5))
 
-//Print a box
+//Print a box - Can't figure out
 
-/*function printBox (width, height) {
+function printBox (width, height) {
    let x, y;
    for (x = 1; x <= width; x++) {
        for (y = 1; y <= height; y++) {
@@ -76,20 +76,21 @@ console.log(printSquare (5))
        }
     } 
 } 
-printBox(4,4) */
+printBox(4,4) 
 
 //Print a banner
 
 
-//Leetspeak
+//Leetspeak - Can't figure out
 //To convert text to its leetspeak version, make the following substitutions:
 
 //A => 4 E => 3 G => 6 I => 1 O => 0 S => 5 T => 7
 
 function leetspeak (string) {
+    let word = " "
     switch (string) {
         case 1:
-            a = "4";
+            word = "4";
             break;
     }
 }
