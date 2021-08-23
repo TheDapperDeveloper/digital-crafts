@@ -52,3 +52,46 @@ function printNumbers2 (start,end) {
 
 printNumbers2(1,10)
 
+// Print a square
+
+function printSquare (num) {
+    for (let x = 0; x <= num; x++) {
+        console.log("---")
+    } 
+}
+console.log(printSquare (5))
+
+//Print a box
+
+/*function printBox (width, height) {
+   let x, y;
+   for (x = 1; x <= width; x++) {
+       for (y = 1; y <= height; y++) {
+        if (x===1 || x===width || y===1 || y=== height) {
+            console.log("-")
+            console.log("\n")
+        } else {
+            console.log(" | ");
+        } 
+       }
+    } 
+} 
+printBox(4,4) */
+
+//Print a banner
+
+
+//Leetspeak
+//To convert text to its leetspeak version, make the following substitutions:
+
+//A => 4 E => 3 G => 6 I => 1 O => 0 S => 5 T => 7
+
+function leetspeak (string) {
+    switch (string) {
+        case 1:
+            a = "4";
+            break;
+    }
+}
+console.log(leetspeak("apple"))
+
