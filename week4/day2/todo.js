@@ -3,10 +3,10 @@ const input = document.getElementById("userList");
 const submitButton = document.querySelector(".submit-button");
 const newContainer = document.querySelector(".sec-container");
 
-//const listItems = document.createElement("li");
+const listItems = document.createElement("li");
 
 function itemAdded() {
-    const listItems = document.createElement("li");
+    //const listItems = document.createElement("li");
     const toDoEntry = input.value;
     listItems.innerHTML = toDoEntry;
     newContainer.append(toDoEntry);

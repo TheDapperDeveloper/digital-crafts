@@ -1,17 +1,50 @@
+html {
+    background: #98D7C2;
+}
+
 .main-container {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #0C1446;
+    font-family: 'Dosis', sans-serif;
 }
 
 .sec-container {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #DDFFE7;
+    border: #167D7F solid 2px;
+    color: #167D7F;
+    font-family: 'Dosis', sans-serif;
+}
+
+input {
+    background-color: #DDFFE7;
+    border: #167D7F solid 2px;
+    color: #167D7F;
+    margin: 2px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.sec-container {
+    color: #0C1446;
+    font-family: 'Dosis', sans-serif;
 }
