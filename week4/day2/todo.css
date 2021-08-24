@@ -1,0 +1,17 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.sec-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
