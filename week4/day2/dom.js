@@ -29,3 +29,18 @@ const studentName = document.createElement("p")
 studentName.innerHTML = "Brande"
 // append your thought onto the actual paper
 bucket.append(studentName);
+
+//paper first
+//query selector (select)
+//create element (create)
+//change innerhtml of the element
+//append to what you selected
+
+//pen first
+//create element
+//innerhtml
+//query selector
+//append to query selector
+
+// callback function - takes a function and let it receive parameters
+// submitButton.onclick = () => nameofFunction(variable)
