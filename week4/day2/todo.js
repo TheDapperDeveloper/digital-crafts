@@ -8,7 +8,7 @@ function itemAdded() {
     const toDoEntry = input.value;
     listItems.innerHTML= toDoEntry;
     newContainer.append(listItems);
-    console.log("Here is the item", toDoEntry);
+    console.log("Things to do:", listItems);
 }
 
 submitButton.addEventListener("click", () => {

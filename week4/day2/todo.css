@@ -7,8 +7,6 @@ html {
     justify-content: center;
     align-content: center;
     align-items: center;
-    /*height: 100vh;
-    width: 100vw;*/  
 }
 
 body {
@@ -18,10 +16,12 @@ body {
 h1 {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-content: center;
     align-items: center;
     color: #0C1446;
     font-family: 'Dosis', sans-serif;
+    padding-top: 350px;
 }
 
 .sec-container {
@@ -29,7 +29,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
 }
 
 button {
