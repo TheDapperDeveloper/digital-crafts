@@ -7,7 +7,12 @@ html {
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 100vh;
+    /*height: 100vh;
+    width: 100vw;*/  
+}
+
+body {
+    box-sizing: border-box;
 }
 
 h1 {
@@ -15,18 +20,16 @@ h1 {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
     color: #0C1446;
     font-family: 'Dosis', sans-serif;
 }
 
 .sec-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    height: 200px;
 }
 
 button {
@@ -34,6 +37,8 @@ button {
     border: #167D7F solid 2px;
     color: #167D7F;
     font-family: 'Dosis', sans-serif;
+    border-radius: 2px;
+    font-size: 16px;
 }
 
 input {
@@ -42,9 +47,14 @@ input {
     color: #167D7F;
     margin: 2px;
     font-family: 'Dosis', sans-serif;
+    border-radius: 2px;
+    font-size: 16px;
 }
 
 .sec-container {
     color: #0C1446;
     font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
