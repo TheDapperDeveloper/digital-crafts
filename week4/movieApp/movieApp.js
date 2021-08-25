@@ -6,7 +6,8 @@ const apiKey = "?apikey=f0d4af81"
 
 async function searchMovie () {
     const movieContainer = document.querySelector(".main-container");
-    const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=")
+    const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input.value)
+    console.log(`${searchURL}` + apiKey + "&s="+ input)
     const jsonMovie = await moviePosterPics.json();
     const movieImage = document.createElement("img")
     console.log(movieImage)
