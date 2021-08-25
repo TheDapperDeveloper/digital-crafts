@@ -1,12 +1,12 @@
 const movieContainer = document.querySelector(".main-container");
-const input = document.querySelector(".input")
+const input = document.getElementById("search-field")
 const searchButton = document.querySelector(".search-button")
 const searchURL = "http://www.omdbapi.com/"
 const apiKey = "?apikey=f0d4af81"
 
 async function searchMovie () {
     const movieContainer = document.querySelector(".main-container");
-    const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input.value)
+    const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input) //input is returning as null why?
     console.log(`${searchURL}` + apiKey + "&s="+ input)
     const jsonMovie = await moviePosterPics.json();
     const movieImage = document.createElement("img")
