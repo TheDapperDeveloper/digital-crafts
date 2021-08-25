@@ -29,3 +29,9 @@ async function getData(){
     const json = await getData.json()
     return json
 }
+
+# HTTP Request Methods - HTTP defines a set of request methods to indicate the desired action to be performed for a given resource.
+- GET "Asking for data to come to you"
+- POST "Sending data somewhere, typically a database"
+- PUT "Used to modify existing data"
+- DELETE "Delete Data" 
