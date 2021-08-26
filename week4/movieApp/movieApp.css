@@ -9,11 +9,9 @@
     gap: 5px;
     width: 400px;
     height: 200px;
+    justify-items: center;
   }
 
-div {
-    justify-content: start;
-  }
 
 h1 {
     text-align: center;
@@ -21,6 +19,14 @@ h1 {
     margin: 0px;
 }
 
-h3 {
+.posters {
+    display: flex;
     color: black;
+    font-size: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: jumps){
+
+
 }
