@@ -1,36 +1,60 @@
+body {
+    background-color: #F0E1DE;
+}
+
 h1 {
     text-align: center;
     height: 10vh;
     margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+    color: #549BAD;
 }
 
 input {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    background-color: #F7C9B6;
+    
 
 }
 
 button {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #549BAD;
 
+}
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
 }
 
 .movie-cards { /* container that holds each movie*/
     display: grid;
     grid-template-columns: 300px 300px 300px;
+    place-items: center;
     gap: 5px;
     width: 400px;
-    height: 200px;  
+    height: 200px;
+    
+    
   }
 
 .wholeBox { /* class for each movie div*/
-    display: grid;
-
+    justify-content: center;
 }
 
 
 .posters { /* h3*/
     display: flex;
-    color: black;
+    color: #549BAD;
     font-size: 20px;
     justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 10px;
 }
 
 @media screen and (max-width: jumps){
