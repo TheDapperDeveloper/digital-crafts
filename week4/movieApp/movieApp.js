@@ -11,23 +11,12 @@ async function searchMovie () {
     const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input) 
     console.log(`${searchURL}` + apiKey + "&s="+ input)
     const jsonMovie = await moviePosterPics.json();
-    const convertedPics = document.createElement("img")
-    //convertedPics.src = jsonMovie.Search.Poster
     for (const movieInObject of jsonMovie.Search) {
-        const newConvertedPics = document.createElement("img")
-        newConvertedPics.src = movieInObject.Poster
-       cardContainer.append(newConvertedPics)
+        const convertedPics = document.createElement("img")
+        convertedPics.src = movieInObject.Poster
+       cardContainer.append(convertedPics)
        console.log(movieInObject.Poster)
     }
-    
-    cardContainer.append(convertedPics)
-    console.log(convertedPics)
 }
     
-    
-
-
-searchMovie()
-
-
 searchButton.addEventListener("click", () => searchMovie())
