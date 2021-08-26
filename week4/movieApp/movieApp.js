@@ -6,7 +6,9 @@ const apiKey = "?apikey=f0d4af81"
 
 
 async function searchMovie () {
-    //const cardContainer = document.querySelector(".movie-cards");
+
+    const cardContainer = document.querySelector(".movie-cards");
+    cardContainer.innerHTML = ""
     const input = document.getElementById("search-field").value;
     const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input) 
     console.log(`${searchURL}` + apiKey + "&s="+ input)
@@ -19,9 +21,7 @@ async function searchMovie () {
         allData.className = "wholeBox"
         const convertedPics = document.createElement("img")
         const movieTitles = document.createElement("h3")
-        allData.innerHTML = ""
-        convertedPics.innerHTML = ""
-        movieTitles.innerHTML = ""
+        
         
         convertedPics.src = movieInObject.Poster
         console.log(movieInObject.Poster)
