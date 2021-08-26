@@ -1,27 +1,32 @@
-.main-container {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-  }
-
-  
-.movie-cards {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    gap: 5px;
-    width: 400px;
-    height: 200px;
-    
-  }
-
-
 h1 {
     text-align: center;
     height: 10vh;
     margin: 0px;
 }
 
-.posters {
+input {
+
+}
+
+button {
+
+}
+
+.movie-cards { /* container that holds each movie*/
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 5px;
+    width: 400px;
+    height: 200px;  
+  }
+
+.wholeBox { /* class for each movie div*/
+    display: grid;
+
+}
+
+
+.posters { /* h3*/
     display: flex;
     color: black;
     font-size: 20px;
