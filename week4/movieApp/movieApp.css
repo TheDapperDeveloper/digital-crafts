@@ -1,15 +1,17 @@
 .main-container {
-    display: flex;
-    text-align: center;
+    display: grid;
     justify-content: center;
+    align-content: center;
   }
-  .movie-cards {
+
+  
+.movie-cards {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     gap: 5px;
     width: 400px;
     height: 200px;
-    justify-items: center;
+    
   }
 
 

@@ -19,6 +19,9 @@ async function searchMovie () {
         allData.className = "wholeBox"
         const convertedPics = document.createElement("img")
         const movieTitles = document.createElement("h3")
+        allData.innerHTML = ""
+        convertedPics.innerHTML = ""
+        movieTitles.innerHTML = ""
         
         convertedPics.src = movieInObject.Poster
         console.log(movieInObject.Poster)
