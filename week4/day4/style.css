@@ -1,0 +1,26 @@
+h1 {
+    color: red;
+  }
+  
+  .cards {
+    display: flex;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 5px;
+    color: bisque;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    height: 220px;
+    width: 180px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
