@@ -1,21 +1,25 @@
 const movieContainer = document.querySelector(".main-container");
-const input = document.getElementById("search-field")
+const cardContainer = document.querySelector(".movie-cards");
+const input = document.getElementById("search-field").value;
 const searchButton = document.querySelector(".search-button")
 const searchURL = "http://www.omdbapi.com/"
 const apiKey = "?apikey=f0d4af81"
 
 async function searchMovie () {
-    const movieContainer = document.querySelector(".main-container");
-    const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input) //input is returning as null why?
+    const cardContainer = document.querySelector(".movie-cards");
+    const input = document.getElementById("search-field").value;
+    const moviePosterPics = await fetch(`${searchURL}` + apiKey + "&s=" + input) 
     console.log(`${searchURL}` + apiKey + "&s="+ input)
     const jsonMovie = await moviePosterPics.json();
-    const movieImage = document.createElement("img")
-    console.log(movieImage)
-    movieImage.src = jsonMovie.image
-    movieContainer.append(movieImage)
-    console.log(movieImage)
+    const convertedPics = document.createElement("img")
+    convertedPics.href = jsonMovie.Poster
+    console.log(jsonMovie.Poster) //Returns an array. Why?
+    cardContainer.append(jsonMovie)
+    console.log(jsonMovie) 
+
 }
 
-//searchMovie();
+searchMovie()
+
 
 searchButton.addEventListener("click", () => searchMovie())

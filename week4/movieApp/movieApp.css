@@ -1,0 +1,10 @@
+.main-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .movie-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
