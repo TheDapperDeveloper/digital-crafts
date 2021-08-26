@@ -12,14 +12,15 @@ async function searchMovie () {
     console.log(`${searchURL}` + apiKey + "&s="+ input)
     const jsonMovie = await moviePosterPics.json();
     
-    for (const singleMovieData of jsonMovie.Search) {
+    /*for (const singleMovieData of jsonMovie.Search) {
         //Do I need to create a new div?
+        const allData = document.createElement("div")
         const movieTitles = document.createElement("h3")
         movieTitles.className = "posters"
         movieTitles.innerHTML = singleMovieData.Title
-        cardContainer.append(movieTitles)
+        allData.append(movieTitles)
         console.log(movieTitles)
-    }
+    }*/
     
     
     for (const movieInObject of jsonMovie.Search) {
@@ -27,6 +28,12 @@ async function searchMovie () {
         convertedPics.src = movieInObject.Poster
        cardContainer.append(convertedPics)
        console.log(movieInObject.Poster)
+       const allData = document.createElement("div")
+        const movieTitles = document.createElement("h3")
+        movieTitles.className = "posters"
+        movieTitles.innerHTML = movieInObject.Title
+        allData.append(movieTitles)
+        console.log(allData)
        
     }
 
