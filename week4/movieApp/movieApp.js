@@ -13,10 +13,17 @@ async function searchMovie () {
     const jsonMovie = await moviePosterPics.json();
     const convertedPics = document.createElement("img")
     convertedPics.src = jsonMovie.Search[0].Poster
-    cardContainer.append(convertedPics)
-    console.log(convertedPics)
-
+    for (const movieInObject of jsonMovie.Search) {
+       cardContainer.append(movieInObject)
+       console.log(movieInObject.Poster)
+    }
+    
+    //cardContainer.append(convertedPics)
+    //console.log(convertedPics)
 }
+    
+    
+
 
 searchMovie()
 
