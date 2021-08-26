@@ -12,9 +12,9 @@ async function searchMovie () {
     console.log(`${searchURL}` + apiKey + "&s="+ input)
     const jsonMovie = await moviePosterPics.json();
     const convertedPics = document.createElement("img")
-    convertedPics.href = jsonMovie.Search[0].Poster
+    convertedPics.src = jsonMovie.Search[0].Poster
     cardContainer.append(convertedPics)
-    console.log(convertedPics)// returns an image but there's nothing showing in the browser
+    console.log(convertedPics)
 
 }
 

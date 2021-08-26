@@ -4,7 +4,19 @@
     justify-content: center;
   }
   .movie-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 5px;
+    width: 400px;
+    height: 200px;
   }
+
+div {
+    justify-content: start;
+  }
+
+h1 {
+    text-align: center;
+    height: 10vh;
+    margin: 0px;
+}
