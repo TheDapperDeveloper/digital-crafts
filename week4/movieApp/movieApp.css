@@ -42,8 +42,8 @@ h3 {
 .movie-cards { /* container that holds each movie*/
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    /*place-items: center;*/
-    justify-items: center;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
   }
 
