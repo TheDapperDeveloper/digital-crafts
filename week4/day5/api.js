@@ -11,10 +11,10 @@ async function weatherSearch () {
     const convertedWeather = await currentWeather.json();
 
     for (const dailyWeather of convertedWeather.base[5]) {
-        console.log(convertedWeather)
+        console.log(dailyWeather.base[5])
         const weatherContainer = document.querySelector(".weather-container")
         const weatherText = document.createElement("h1")
-        weatherText.innerHTML = dailyWeather.temp
+        dailyWeather.value = weatherText.innerHTML
         console.log(weatherText)
         weatherContainer.append(weatherText)
     }
