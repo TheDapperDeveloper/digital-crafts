@@ -64,7 +64,36 @@ img {
     width: 300px;
 }
 
-@media screen and (max-width: jumps){
+@media screen and (max-width: 925px){
+    .main-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .movie-cards { /* container that holds each movie*/
+        display: grid;
+        grid-template-columns: 300px 300px;
+        align-items:center;
+        justify-content: center;
+        gap: 5px;
+      }
+    }
 
-
-}
+    @media screen and (max-width: 620px){
+        .main-container {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;   
+        }
+        .movie-cards { /* container that holds each movie*/
+            display: grid;
+            grid-template-columns: 300px;
+            align-items:center;
+            justify-content: center;
+            gap: 5px;
+          }
+        }
