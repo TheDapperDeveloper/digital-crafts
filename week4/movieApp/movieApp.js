@@ -1,5 +1,3 @@
-//const movieContainer = document.querySelector(".main-container");
-
 const searchButton = document.querySelector(".search-button")
 const searchURL = "http://www.omdbapi.com/"
 const apiKey = "?apikey=f0d4af81"

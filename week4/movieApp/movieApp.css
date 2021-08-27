@@ -2,10 +2,16 @@ body {
     background-color: #F0E1DE;
 }
 
-h1 {
+.main-container {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    height: 10vh;
-    margin: 0px;
+    flex-direction: column;
+    align-items: center;   
+}
+
+h1 {
+    margin: 30px;
     font-family: 'Varela Round', sans-serif;
     color: #549BAD;
 }
@@ -14,43 +20,41 @@ input {
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
     background-color: #F7C9B6;
-    
+}
 
+input[type="text"], text area {
+    color: #549BAD;
+    width: 200px;
 }
 
 button {
     font-family: 'Varela Round', sans-serif;
     font-size: 16px;
     color: #549BAD;
-
+    width: 100px;
 }
 
 h3 {
     font-family: 'Varela Round', sans-serif;
+    text-align: center;
 }
 
 .movie-cards { /* container that holds each movie*/
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    place-items: center;
+    /*place-items: center;*/
+    justify-items: center;
     gap: 5px;
-    width: 400px;
-    height: 200px;
-    
-    
   }
 
-.wholeBox { /* class for each movie div*/
-    justify-content: center;
-}
 
-
-.posters { /* h3*/
+.wholeBox { /* h3 and img*/
     display: flex;
     color: #549BAD;
     font-size: 20px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 img {
