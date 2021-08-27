@@ -30,7 +30,7 @@ async function searchMovie () {
         cardContainer.append(allData)        
     }    
 }
-  
+
 
     
 searchButton.addEventListener("click", () => searchMovie())
