@@ -36,6 +36,7 @@ button {
 
 h3 {
     font-family: 'Varela Round', sans-serif;
+    font-size: large;
     text-align: center;
 }
 
@@ -59,6 +60,8 @@ h3 {
 
 img {
     border-radius: 10px;
+    height: 400px;
+    width: 300px;
 }
 
 @media screen and (max-width: jumps){
