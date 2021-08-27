@@ -10,11 +10,12 @@ async function weatherSearch () {
     console.table(`${dataURL}`+ input + "&units=imperial&appid=" + apiKey)
     const convertedWeather = await currentWeather.json();
 
-    for (const dailyWeather of convertedWeather) {
+    for (const dailyWeather of convertedWeather.base[5]) {
+        console.log(convertedWeather)
         const weatherContainer = document.querySelector(".weather-container")
         const weatherText = document.createElement("h1")
-        console.log(weatherText)
         weatherText.innerHTML = dailyWeather.temp
+        console.log(weatherText)
         weatherContainer.append(weatherText)
     }
 
