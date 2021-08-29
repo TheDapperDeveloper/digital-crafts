@@ -9,8 +9,24 @@ async function searchBook () {
     console.table(`${searchURL}` + "title=" + input + "&api-key=" + apiKey)
     const jsonBook = await searchBook.json();
     console.log(jsonBook)
+
     const bookReview = jsonBook.results[0].url
     console.table(bookReview)
+    const reviewURL = document.createElement("link")
+    reviewURL.href = bookReview
+    console.log(reviewURL)
+    mainContainer.append(reviewURL)
+
+    const bookTitle =jsonBook.results[0].book_title
+    console.log(bookTitle)
+
+    const bookAuthor = jsonBook.results[0].book_author
+    console.log(bookAuthor)
+
+    const bookDate =jsonBook.results[0].publication_dt
+    console.log(bookDate)
+
+
 }
 
 searchButton.addEventListener("click", () => searchBook())
