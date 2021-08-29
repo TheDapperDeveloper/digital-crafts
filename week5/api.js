@@ -8,8 +8,15 @@ async function searchBook () {
     const input = document.querySelector(".input").value;
     const searchBook = await fetch(`${searchURL}` + "title=" + input + "&api-key=" + apiKey)
     const jsonBook = await searchBook.json();
-
+    console.table(jsonBook)
+// need to add for loop in case there are multiple reviews
+// need to add if statement if there is no review
     const bookTitle =jsonBook.results[0].book_title
+    // console.table(bookTitle)
+    //if (jsonBook.results.length= 0) {
+      //  const noReview = document.createElement("h3")
+       // noReview.innerHTML = "The New York Times did not publish a review for this book."
+    //}
     const viewTitle = document.createElement("h3")
     viewTitle.innerHTML = bookTitle
     mainContainer.append(infoContainer)
