@@ -11,16 +11,19 @@ async function searchBook () {
     console.table(jsonBook)
 // need to add for loop in case there are multiple reviews
 // need to add if statement if there is no review
-    const bookTitle =jsonBook.results[0].book_title
-    // console.table(bookTitle)
-    //if (jsonBook.results.length= 0) {
-      //  const noReview = document.createElement("h3")
-       // noReview.innerHTML = "The New York Times did not publish a review for this book."
-    //}
-    const viewTitle = document.createElement("h3")
-    viewTitle.innerHTML = bookTitle
-    mainContainer.append(infoContainer)
-    infoContainer.append(bookTitle)
+    console.log(jsonBook.num_results)
+    if (jsonBook.num_results = 0) {
+      const noReview = document.createElement("h3")
+       noReview.innerHTML = "The New York Times did not publish a review for this book."
+        console.log(noReview)
+       mainContainer.append(infoContainer)
+        infoContainer.append(noReview)
+    } else if (jsonBook.num_results > 0) {
+        const bookTitle =jsonBook.results[0].book_title
+        const viewTitle = document.createElement("h3")
+        viewTitle.innerHTML = bookTitle
+        mainContainer.append(infoContainer)
+        infoContainer.append(bookTitle)
     
 
     const bookAuthor = jsonBook.results[0].book_author
@@ -41,8 +44,7 @@ async function searchBook () {
 
     const bookDate =jsonBook.results[0].publication_dt
     console.log(bookDate)
-
-
+    }
 }
 
 searchButton.addEventListener("click", () => searchBook())
