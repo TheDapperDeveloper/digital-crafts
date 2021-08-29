@@ -41,13 +41,6 @@ async function searchBook () {
     mainContainer.append(infoContainer)
     infoContainer.append(reviewURL)
 
-    
-
-
-    const bookDate =jsonBook.results[0].publication_dt
-    console.log(bookDate)
-
-    
     }
 }
 
