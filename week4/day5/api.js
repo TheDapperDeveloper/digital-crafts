@@ -2,7 +2,7 @@ const mainContainer = document.querySelector(".main-container")
 const searchButton = document.querySelector(".button")
 
 const dataURL = "https://api.openweathermap.org/data/2.5/weather?q="
-const apiKey= "622d85fb1a656b0a3ab04b6a4f7fe706"
+const apiKey= "fd767ad76183cb8a5bf7aeb98cb43342"
 
 async function weatherSearch () {
     const weatherContainer = document.querySelector(".weather-container");
