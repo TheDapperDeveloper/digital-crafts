@@ -1,0 +1,14 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
