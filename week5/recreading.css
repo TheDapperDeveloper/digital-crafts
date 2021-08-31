@@ -38,6 +38,105 @@ h1 {
 }
 
 .fiction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
+
+.nonfiction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.race {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.self {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.finance {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.realestate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.lifestyle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.light {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+h3 {
+    display: flex;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+   
+}
+
+h4 {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
