@@ -23,21 +23,6 @@ a {
     color: white;
 }
 
-.main-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-}
-
 h1 {
     display: flex;
     justify-content: center;

@@ -2,13 +2,30 @@ body{
     background-color: #e3b86e;
     color: white;
     font-family: 'Varela Round', sans-serif;
-    
-
 }
-.nav-bar {
-    display: flex;
-    justify-content: flex-end;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
     
+    
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    font-family: 'Varela Round', sans-serif; 
+    text-decoration: none;
+    color: white;
+}
+
+.site-title {
+    display: flex;
+    justify-content: center;
 }
 
 .main {
@@ -74,6 +91,7 @@ figcaption {
 
 img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 h1 {
