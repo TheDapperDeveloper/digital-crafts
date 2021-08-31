@@ -23,6 +23,20 @@ a {
     color: white;
 }
 
+input {
+    
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+}
+button { 
+    background-color: white;
+    color: black;
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+    border-radius: 5px;
+
+}
 .main-container {
     display: flex;
     justify-content: center;
@@ -38,4 +52,17 @@ a {
 h1 {
     display: flex;
     justify-content: center;
+    font-weight: normal;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    border: 1px white;
 }
