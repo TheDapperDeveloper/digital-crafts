@@ -1,8 +1,8 @@
-html {
+/* html {
     padding: 0px;
     margin: 0px;
     margin-top: 0;   
-}
+} */
 
 body{
     background-color: #e3b86e;
@@ -33,31 +33,16 @@ a {
 }
 
 .main-container {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    justify-content: center;
+    
+}
+
+/* form {
     display: flex;
     flex-direction: column;
-    margin-right: 0px;
-   
-    
-    
-}
-
-.form-container {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    flex-direction: column;  
-    
-    
-}
-
-.book-list {
-    display: grid;
-    grid-template-columns: 100px 1 fr;
-}
-
-/* img {
-    display: flex;
-    float: left;
+    margin: 0px;
 } */
 
 h1 {
@@ -66,6 +51,15 @@ h1 {
     font-weight: normal;
     font-family: 'Varela Round', sans-serif;
 }
+
+h3 {
+    display: flex;
+    justify-content: center; 
+    font-weight: normal;
+    font-family: 'Varela Round', sans-serif;
+
+}
+    
 
 img {
     border-radius: 10px;

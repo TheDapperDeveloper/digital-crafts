@@ -6,7 +6,6 @@ async function searchBook () {
     
     const mainContainer = document.querySelector(".main-container")
     const infoContainer = document.querySelector(".info-container")
-    
     const input = document.querySelector(".input").value;
     
     
@@ -15,7 +14,6 @@ async function searchBook () {
     console.log(jsonBook)
     console.table(jsonBook.num_results)
 
-// need to add for loop in case there are multiple reviews
             if (jsonBook.num_results == '0') {
                 const noReview = document.createElement("h3")
                  noReview.innerHTML = "The New York Times did not publish a review for this book."
@@ -33,7 +31,7 @@ async function searchBook () {
                           articleAuthorName.innerHTML = viewAuthor
                           mainContainer.append(infoContainer)
                           infoContainer.append(viewTitle, bookAuthorName, articleAuthorName)
-
+                          
 
                         const summary = books.summary
                         const viewSummary = document.createElement("h4")
@@ -46,9 +44,7 @@ async function searchBook () {
                         reviewURL.href = bookReview
                         reviewURL.innerHTML = "Click here to read the review."
                         mainContainer.append(infoContainer)
-                        infoContainer.append(reviewURL)    
-                        
-                        
+                        infoContainer.append(reviewURL)      
                   }
 
         }

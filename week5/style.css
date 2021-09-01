@@ -39,14 +39,24 @@ button {
 }
 .main-container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;  
+    position: absolute; 
+    right: 2px;
+    float: right;
+    width: 500px;
+    margin-right: 100px;
+    
+   
+}
+
+.book-title {
+    margin-top: 30px;
 }
 
 .info-container {
     display: flex;
     flex-direction: column;
+    float: right;
 }
 
 h1 {
@@ -54,6 +64,7 @@ h1 {
     justify-content: center;
     font-weight: normal;
     padding: 0px;
+    
 }
 
 h2{
@@ -82,5 +93,13 @@ a {
     display: flex;
     justify-content: center;
     border: 1px white;
+}
+
+.photo {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    margin: 20px;
+
 }
 
