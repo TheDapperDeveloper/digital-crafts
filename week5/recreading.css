@@ -1,11 +1,15 @@
-html, body {
+html, body, header {
     padding: 0px;
     margin: 0px;
+    margin-top: 0;
+    
 }
 
 .main {
-    background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat center center fixed;
-    
+    background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat scroll center top fixed;   
+    background-size: 100%;
+    margin: 0; 
+    position: relative;
 }
 
 body{
@@ -59,17 +63,18 @@ h1 {
     grid-template-columns: repeat(4, 300px);
     row-gap: 100px; 
     column-gap: 15px;
-    margin: 100px;  
+    margin: 100px; 
 }
 
 .fiction {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 20px;
     justify-content: center;
     align-items: center;
     align-content: center;
+    
 }
 
 .nonfiction {
@@ -168,6 +173,522 @@ p {
     margin: 190px;
     color: #BCDBDA;
     font-weight: bolder;
+}
+
+@media screen and (max-width:1385px) {
+    .main {
+        background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat center center fixed;   
+        background-size: 100%;
+        margin: 0; 
+    }
+    
+    body{
+        background-color: #e3b86e;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;  
+        
+        
+    }
+    
+    li {
+        float: left;   
+    }
+    
+    .active {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        display: block;
+        padding: 8px;
+        font-family: 'Varela Round', sans-serif; 
+        text-decoration: none;
+        color: white;
+    }
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+    }
+    
+    .quote {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: repeat(3, 300px);
+        row-gap: 100px; 
+        column-gap: 15px;
+        margin: 100px; 
+    }
+    
+    .fiction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    
+    .nonfiction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .race {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .self {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .finance {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .realestate {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .lifestyle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .light {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    h3 {
+        display: flex;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center; 
+        margin: 10px;
+    }
+    
+    h4 {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        margin: 10px;
+    }
+    
+    p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 190px;
+        color: #BCDBDA;
+        font-weight: bolder;
+    }
+
+}
+
+@media screen and (max-width:1034px) {
+    .main {
+        background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat center center fixed;   
+        background-size: 100%;
+        margin: 0; 
+    }
+    
+    body{
+        background-color: #e3b86e;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;  
+        
+        
+    }
+    
+    li {
+        float: left;   
+    }
+    
+    .active {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        display: block;
+        padding: 8px;
+        font-family: 'Varela Round', sans-serif; 
+        text-decoration: none;
+        color: white;
+    }
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+    }
+    
+    .quote {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: repeat(2, 300px);
+        row-gap: 100px; 
+        column-gap: 15px;
+        margin: 100px; 
+    }
+    
+    .fiction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    
+    .nonfiction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .race {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .self {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .finance {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .realestate {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .lifestyle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .light {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    h3 {
+        display: flex;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center; 
+        margin: 10px;
+    }
+    
+    h4 {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        margin: 10px;
+    }
+    
+    p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 190px;
+        color: #BCDBDA;
+        font-weight: bolder;
+    }
+
+}
+
+@media screen and (max-width:725px) {
+    .main {
+        background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat center center fixed;   
+        background-size: 100%;
+        margin: 0; 
+    }
+    
+    body{
+        background-color: #e3b86e;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;  
+        
+        
+    }
+    
+    li {
+        float: left;   
+    }
+    
+    .active {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        display: block;
+        padding: 8px;
+        font-family: 'Varela Round', sans-serif; 
+        text-decoration: none;
+        color: white;
+    }
+    
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: normal;
+    }
+    
+    .quote {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    .cards {
+        display: grid;
+        grid-template-rows: 300px 300px;
+        grid-template-columns: repeat(1, 300px);
+        row-gap: 100px; 
+        column-gap: 15px;
+        margin: 100px; 
+    }
+    
+    .fiction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+    
+    .nonfiction {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .race {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .self {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .finance {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .realestate {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .lifestyle {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .light {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    h3 {
+        display: flex;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        justify-content: center;
+        align-items: center;
+        align-content: center; 
+        margin: 10px;
+    }
+    
+    h4 {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        margin: 10px;
+    }
+    
+    p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 190px;
+        color: #BCDBDA;
+        font-weight: bolder;
+    }
+
 }
 
 
