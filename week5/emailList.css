@@ -25,18 +25,25 @@ a {
 
 .main-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
+    float: right;
+    /* justify-content: center;
+    align-content: center; */
+    flex-direction: row;
+    /* align-items: center; */
 }
 
 .form-container {
     display: flex;
-    justify-content: center;
+    float: right;
+    justify-content: flex-end;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;  
 }
+
+/* img {
+    display: flex;
+    float: left;
+} */
 
 h1 {
     display: flex;
