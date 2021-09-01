@@ -1,3 +1,9 @@
+.main {
+    background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat fixed;
+    height: 45vh;
+    width: 170vh;
+}
+
 body{
     background-color: #e3b86e;
     color: white;
@@ -12,7 +18,12 @@ ul {
 }
 
 li {
-    float: left;
+    float: left;   
+}
+
+.active {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -29,20 +40,28 @@ h1 {
     font-weight: normal;
 }
 
+.quote {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
 .cards {
     display: grid;
     grid-template-rows: 300px 300px;
     grid-template-columns: repeat(4, 300px);
-    row-gap: 15px; 
+    row-gap: 100px; 
     column-gap: 15px;
-    margin: 50px;  
+    margin: 100px;  
 }
 
 .fiction {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -53,7 +72,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -64,7 +82,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -75,7 +92,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -86,7 +102,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -97,7 +112,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -108,7 +122,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -119,7 +132,6 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
@@ -128,16 +140,29 @@ h1 {
 
 h3 {
     display: flex;
-    color: black;
+    color: white;
     font-family: 'Varela Round', sans-serif;
-   
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin: 10px;
 }
 
 h4 {
     display: flex;
     flex-wrap: wrap;
-    color: black;
+    color: white;
     font-family: 'Varela Round', sans-serif;
+    margin: 10px;
 }
+
+p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 90px;
+}
+
 
 
