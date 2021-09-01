@@ -36,7 +36,7 @@ async function searchBook () {
 
 
                         const summary = books.summary
-                        const viewSummary = document.createElement("h3")
+                        const viewSummary = document.createElement("h4")
                         viewSummary.innerHTML = summary
                         mainContainer.append(infoContainer)
                         infoContainer.append(viewSummary)

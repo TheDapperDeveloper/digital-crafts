@@ -53,18 +53,29 @@ h1 {
     display: flex;
     justify-content: center;
     font-weight: normal;
+    padding: 0px;
 }
 
 h2{
     display: flex;
     justify-content: center;
     font-weight: normal;
+    margin: 0px;
 }
 
 h3 {
     display: flex;
     justify-content: center;
     font-weight: normal;
+    margin: 5px;
+
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    margin: 5px;
 }
 
 a {
