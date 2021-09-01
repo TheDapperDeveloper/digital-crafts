@@ -1,7 +1,16 @@
+html {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0;   
+}
+
 body{
     background-color: #e3b86e;
     color: white;
     font-family: 'Varela Round', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0;  
 }
 ul {
     list-style-type: none;
@@ -55,8 +64,20 @@ h1 {
     display: flex;
     justify-content: center;
     font-weight: normal;
+    font-family: 'Varela Round', sans-serif;
 }
 
 img {
     border-radius: 10px;
+}
+
+button {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+}
+
+input {
+    width: 150px;
+    font-family: 'Varela Round', sans-serif;
 }

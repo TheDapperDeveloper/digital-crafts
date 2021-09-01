@@ -55,6 +55,12 @@ h1 {
     font-weight: normal;
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+}
+
 h3 {
     display: flex;
     justify-content: center;
