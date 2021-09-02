@@ -101,7 +101,6 @@ a {
 
 .photo {
     display: flex;
-    /* position: absolute; */
     justify-content: flex-start;
     margin: 20px;
 
@@ -112,19 +111,17 @@ a {
         display: flex;
         flex-direction: column;  
         right: 2px;
-        /* float: right; */
         width: 500px;
         margin-right: 100px;
     }
     .info-container {
          display: flex;
         flex-direction: column;
-        /* float: right; */
+       
         }
     .photo {
          display: flex;
-        /* position: absolute; */
-        /* justify-content: flex-start; */
+        
         margin: 20px;
         
         }
@@ -151,12 +148,11 @@ a {
         .main-container {
             display: flex;
             align-content: flex-end;
-            width: 100vw;
+            width: 18vh;
         }
         .info-container {
              display: flex;
             flex-direction: column;
-            /* float: right; */
             }
             h1 {
                 display: flex;
@@ -177,10 +173,8 @@ a {
             
             h3 {
                 display: flex;
-                /* align-items: center; */
-                /* justify-content: center; */
                 font-weight: normal;
-                /* margin: 5px; */
+                margin: 5px; 
                 font-size: 3vw;
             
             }
@@ -198,7 +192,6 @@ a {
                 color: black;
                 font-family: 'Varela Round', sans-serif;
                 font-size: 2vw;
-                width: 100vw;
                 
             }
             button { 
@@ -208,7 +201,7 @@ a {
                 font-family: 'Varela Round', sans-serif;
                 font-size: 2vw;
                 border-radius: 5px;
-                width: 100vw;
+                margin-top: 5px;
             
             }
 
