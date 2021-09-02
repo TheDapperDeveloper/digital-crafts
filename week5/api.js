@@ -7,7 +7,7 @@ async function searchBook () {
     const mainContainer = document.querySelector(".main-container")
     const infoContainer = document.querySelector(".info-container")
     const input = document.querySelector(".input").value;
-    
+    infoContainer.innerHTML =""
     
     const searchBook = await fetch(`${searchURL}` + "title=" + input + "&api-key=" + apiKey)
     const jsonBook = await searchBook.json();
