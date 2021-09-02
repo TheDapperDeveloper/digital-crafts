@@ -9,3 +9,7 @@ I decided to build my webpage using books as the subject matter. I attacked the 
 The next step was to determine the layout for the pages. I decided on these four pages: Home, Recommended Reading, Book Reviews, and E-mail List. For all four pages I used a combination of grid and flexbox in CSS. Lastly, I decided on a design theme. I wanted to keep it simple and also give users a lot to look at. I used one background color and several images to make the pages pop. I also used CSS to add some animation to the pages.
 
 This was a fun project where I learned the complexity of CSS as well as got more clarity on DOM manipulation and APIs.
+
+Here is the link to my medium article about this project.
+
+https://medium.com/@brandegilbert/brandes-book-club-a-website-for-book-lovers-304aecabd186
