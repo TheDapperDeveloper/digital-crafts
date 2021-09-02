@@ -24,13 +24,8 @@ ul {
     font-size: 1.5vw;     
 }
 
-li {
-    float: left;   
-}
-
-.active {
-    margin: 0;
-    padding: 0;
+.float-right {
+    float: right;   
 }
 
 a {
