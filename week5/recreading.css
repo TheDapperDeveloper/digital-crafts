@@ -10,6 +10,8 @@ html, body, header {
     
 }
 
+
+
 body{
     background-color: #e3b86e;
     color: white;
@@ -19,13 +21,13 @@ ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     font-size: 1.5vw;     
 }
 
-.float-right {
-    float: right;   
+li {
+    float: left;
 }
 
 a {
