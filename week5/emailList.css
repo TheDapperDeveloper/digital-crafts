@@ -96,6 +96,14 @@ input {
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) {
 
+        a {
+            display: block;
+            padding: 8px;
+            font-family: 'Varela Round', sans-serif; 
+            text-decoration: none;
+            color: white;
+        }
+
         .main-container {
             display: grid;
             grid-template-columns: 600px;
@@ -104,7 +112,7 @@ input {
         }
         img {
             border-radius: 10px;
-            height: 400px;
+            height: 50vh;
         }
 
         h1 {
