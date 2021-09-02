@@ -202,8 +202,7 @@ a {
                 
             }
             button { 
-                display: flex;
-                align-content: center;
+                
                 background-color: white;
                 color: black;
                 font-family: 'Varela Round', sans-serif;
