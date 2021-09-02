@@ -5,14 +5,16 @@ body{
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;  
+    margin: 10px;
+    padding: 10px;
+    font-size: 2vw;  
     
     
 }
 
 li {
     float: left;
+
 }
 
 a {
@@ -44,7 +46,7 @@ a {
 
 .center-text {
     position: absolute;
-    font-size: 45px;
+    font-size: 5vw;
     color: white;
     font-family: 'Varela Round', sans-serif;
     display: block;
@@ -83,7 +85,7 @@ a {
 
 figcaption {
     text-align: center;
-    font-size: xx-large;
+    font-size: 3vw;
     margin: 40px;
     color: white;
     font-family: 'Varela Round', sans-serif;  
@@ -97,6 +99,9 @@ img {
 h1 {
     font-family: 'Varela Round', sans-serif;
     font-weight: normal;
+    margin-right: 0px;
+    margin-left: 0px;
+    
 }
 
 @media screen and (max-width:1073px) {
@@ -197,7 +202,20 @@ h1 {
     }
     
 }
+@media screen and (max-width: 675px) {
+    .center-text {
+        font-size: 2vw;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
 
+    }
+
+    .main-image {
+        height: 300px;
+        width: 600px;
+    }
+
+}
 @media screen and (max-width:958px) {
     ul {
         list-style-type: none;
@@ -317,8 +335,7 @@ h1 {
             list-style-type: none;
             margin: 0;
             padding: 0;  
-            
-            
+            font-size: 2vw;   
         }
         
         li {
@@ -349,12 +366,13 @@ h1 {
         }
         
         .main-image {
-            object-fit: fill;
+            height: 250px;
+            width: 375px;
         }
         
         .center-text {
             position: absolute;
-            font-size: 45px;
+            font-size: 5vw;
             color: white;
             font-family: 'Varela Round', sans-serif;
             display: block;
@@ -407,6 +425,7 @@ h1 {
         h1 {
             font-family: 'Varela Round', sans-serif;
             font-weight: normal;
+            font-size: 3vw;
         }
 
     }
