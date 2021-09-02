@@ -19,8 +19,9 @@ body{
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;  
+    margin: 10px;
+    padding: 10px;
+    font-size: 2vw;   
     
     
 }
@@ -46,12 +47,13 @@ h1 {
     display: flex;
     justify-content: center;
     font-weight: normal;
+    font-size: 4vw;
 }
 
 .quote {
     display: flex;
     justify-content: center;
-    font-size: xx-large;
+    font-size: 3vw;
     font-family: 'Varela Round', sans-serif;
     font-weight: normal;
     font-style: italic;
@@ -458,6 +460,118 @@ p {
         font-weight: bolder;
     }
 
+
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .main {
+            background: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1682&q=80") no-repeat center fixed;   
+            background-size: 200%;
+            margin: 0; 
+            position: relative; 
+            /* height: 400px;
+            width: 500px; */
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;  
+            font-size: 4vw;   
+        }
+        
+        li {
+            float: left;
+        }
+        
+        a {
+            display: block;
+            padding: 8px;
+            font-family: 'Varela Round', sans-serif; 
+            text-decoration: none;
+            color: white;
+        }
+        
+        .site-title {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin: 80px;
+            position: relative;
+            text-align: center;   
+        }
+        
+        /* .main-image {
+            height: 250px;
+            width: 375px;
+        } */
+        
+        .center-text {
+            position: absolute;
+            font-size: 5vw;
+            color: white;
+            font-family: 'Varela Round', sans-serif;
+            display: block;
+            
+        }
+        
+        .photos {
+            display: grid;
+            grid-template-columns: 500px;
+            grid-template-rows: 500px;
+            align-items: center;
+            justify-content: center; 
+            border-radius: 10px;
+            gap: 20px;  
+              
+        }
+        
+        .favs {
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            padding: 50px;
+            margin: 50px;
+        }
+        
+        .favorites {
+            display: grid;
+            grid-template-columns: repeat(1, 300px);
+            grid-template-rows: repeat(5, 400px);
+            align-items: center;
+            justify-content: center; 
+            border-radius: 10px;
+            margin: 20px;
+            gap: 20px; 
+        } 
+        
+        figcaption {
+            text-align: center;
+            font-size: xx-large;
+            margin: 40px;
+            color: white;
+            font-family: 'Varela Round', sans-serif;  
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-family: 'Varela Round', sans-serif;
+            font-weight: normal;
+            font-size: 3vw;
+        }
+
+    }
 }
 
 
