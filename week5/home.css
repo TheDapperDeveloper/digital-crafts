@@ -97,6 +97,12 @@ img {
     border-radius: 10px;
 }
 
+img:hover {
+    -moz-box-shadow: 0 0 10px teal;
+    -webkit-box-shadow: 0 0 10px teal;
+    box-shadow: 0 0 10px teal;
+}
+
 h1 {
     font-family: 'Varela Round', sans-serif;
     font-weight: normal;

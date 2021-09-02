@@ -70,6 +70,12 @@ h1 {
     justify-content: center;
 }
 
+img:hover {
+        -moz-box-shadow: 0 0 10px teal;
+        -webkit-box-shadow: 0 0 10px teal;
+        box-shadow: 0 0 10px teal;
+    }
+
 h3 {
     display: flex;
     color: white;
