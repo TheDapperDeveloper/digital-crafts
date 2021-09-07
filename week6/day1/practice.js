@@ -2,23 +2,23 @@
 const express = require('express');
 const app = express();
 
-// app.get("/", (req, res) => {
-//     res.send("Hello World!")
-// });
+app.get("/", (req, res) => {
+    res.send("Hello World!")
+});
 
-// app.post("/cats", (req, res) => {
-//     res.send("Meow!")
-// });
+app.post("/cats", (req, res) => {
+    res.send("Meow!")
+});
 
-// app.put("/dogs", (req, res) => {
-//     res.send("Woof!")
-// });
+app.put("/dogs", (req, res) => {
+    res.send("Woof!")
+});
 
-// app.patch("/cats_and_dogs", (req, res)=> {
-//     res.send("Dogs and cats living together...mass hysteria!!")
-// })
+app.patch("/cats_and_dogs", (req, res)=> {
+    res.send("Dogs and cats living together...mass hysteria!!")
+})
 
-// app.listen(3000, console.log("I'm on port 3000"))
+app.listen(3000, console.log("I'm on port 3000"))
 
 //Add Routes with Parameters
 
@@ -38,5 +38,14 @@ app.get("/greet/:name", (req, res) => {
     const { name } = req.params
     res.send(`Hello, ${name}!`);
 });
+
+app.listen(3000, console.log("This works"))
+
+//Send an HTML Response
+
+app.get("/greet/:name", (req,res) => {
+    const { name } = req.params
+    res.write(`<h1> Hello, ${name}!</h1>`)
+})
 
 app.listen(3000, console.log("This works"))
