@@ -65,4 +65,14 @@ app.get("/viewStockById/:id", async (req, res) => {
     res.send(data)
 })
 
+//Route to view stock by specific criteria
+
+app.get("/viewByFilter", async (req, res) => {
+const { data, error } = await supabase
+  .from("stockInfo")
+  .select(`id, name`)
+  res.send(data)
+})
+
+
 app.listen(PORT, console.log(`Listening on ${PORT}`)) 
