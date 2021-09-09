@@ -43,4 +43,13 @@ app.get("/viewStock", async (req, res) => {
     res.send(data)
 })
 
+app.get("/viewStockById/:id", async (req, res) => {
+    console.log()
+    const id = req.params.id
+    const { data, error } = await supabase
+    .from("stockInfo")
+    .select().match({id: id})
+    res.send(data)
+})
+
 app.listen(PORT, console.log(`Listening on ${PORT}`)) //S
