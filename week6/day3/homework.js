@@ -39,11 +39,16 @@ app.put("/updateStock/:id", async (req, res) => {
 
 })
 
-// Route to update many
-app.put("/updateMany/:", async (req, res) => {
-    const { data, error } = await supabase
-    .from("stockInfo")
-    .upsert({data})
+// Route to update many - I can't figure this one out.
+app.put("/updateMany/:id", async (req, res) => {
+    const id = req.params.id.split('')
+    for (const num of id) {
+        const intId = parseInt(num) 
+        const { data, error } = await supabase
+        .from("stockInfo")
+        
+    }
+        
 })
 
 //Route to view stock info
