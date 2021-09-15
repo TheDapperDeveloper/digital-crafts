@@ -1,6 +1,5 @@
 const Sequelize = require("sequelize");
-const {todolist} = require("./models");
-console.log(todolist)
+const {toDoList} = require("./models");
 const express = require("express");
 const app = express();
 const PORT = 3000;
@@ -13,9 +12,10 @@ app.use(express.json());
 // .update()
 // .destroy()
 
+//Create
 app.post("/create_todo", async(req, res) => {
     const { task } = req.body;
-    const newTask = await toDoLists.create({
+    const newTask = await toDoList.create({
         task:task,
     });
     res.send({
@@ -23,34 +23,25 @@ app.post("/create_todo", async(req, res) => {
     });
 });
 
-app.post("/get_users", async(req, res) => {
-    const users = await Users.findAll();
-    res.send(users);
+//Read
+
+app.post("/get_list", async(req, res) => {
+    const tasks = await toDoList.findAll();
+    res.send(tasks);
 });
 
-app.post("/get_users_by_lastname", async(req, res) => {
-    const users = await Users.findAll( {
-        attributes: ["firstName"]
-    });
-    res.send(users);
-});
-
-app.post("/get_users/:id", async(req, res) => {
-    const user = await Users.findByPk(req.params.id);
-    res.send(user);
-});
-
-app.post("/update_users/:id", async(req, res) => {
-    const users = await Users.update(req.body, {
+//Update
+app.post("/update_task/:id", async(req, res) => {
+    const tasks = await toDoList.update(req.body, {
         where: {
             id:req.params.id
         }
     });
-    res.send(users);
+    res.send(tasks);
 });
 
-app.post("/delete_user/:id", async(req, res) => {
-    const users = await Users.destroy({
+app.post("/delete_task/:id", async(req, res) => {
+    const task = await toDoList.destroy({
         where: {
             id:req.params.id
         }
