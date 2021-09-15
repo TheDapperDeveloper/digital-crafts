@@ -1,23 +1,24 @@
 const submitButton = document.querySelector(".submit-button");
 
-var connection = new ActiveXObject("ADODB.Connection") ;
+const getToDo = async () => {
+    const url = "http://localhost:3000/create_todo";
+    const task = document.querySelector(".task").value
+    
+    const toDo = {
+        task
+    }; 
 
-var connectionstring="Data Source=localhost;Initial Catalog=ToDoApp;User ID=;Password=;Provider=SQLOLEDB";
-
-connection.Open(connectionstring);
-var rs = new ActiveXObject("ADODB.Recordset");
-
-rs.Open("SELECT * FROM table", connection);
-rs.MoveFirst
-while(!rs.eof)
-{
-   document.write(rs.fields(1));
-   rs.movenext;
+    const createList = await fetch(url, {
+        method: "POST",
+        mode:"cors",
+        headers: {
+            "content-Type": "application/json",
+        },
+        body: JSON.stringify(toDo),
+    });
+    console.log(createList)
 }
 
-rs.close;
-connection.close; 
-
 submitButton.addEventListener("click", () => {
-    console.log("working")
+    getToDo();
 } );
