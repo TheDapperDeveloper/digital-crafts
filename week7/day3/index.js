@@ -21,6 +21,7 @@ app.post("/create_todo", async(req, res) => {
     res.send({
         task:newTask.task,
     });
+    console.log(task)
 });
 
 //Read
