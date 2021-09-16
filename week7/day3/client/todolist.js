@@ -87,19 +87,26 @@ updateButton.addEventListener("click", () => {
 //Delete
 
 const deleteTask = async () => {
-    const taskNumber = document.querySelector(".task-number-delete").value
+    const taskNumber = document.querySelector(".delete").value
     const url = `http://localhost:3000/delete_task/${taskNumber}`;
+
+
+    const taskData = {
+        id: taskNumber
+    }
+    console.log(taskData)
     const listData = await fetch (url, {
         method: "POST",
         mode: "cors",
         headers: {
       "Content-Type": "application/json",
     },
+    body: JSON.stringify(taskData), 
   });
-  const json = await listData.json();
-  console.log(json)
+  
 }
 
+
 deleteButton.addEventListener("click", () => {
-    deleteTask
+    deleteTask();
 });
