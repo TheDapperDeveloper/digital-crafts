@@ -6,10 +6,10 @@ const PORT = 3000;
 
 app.use(express.json());
 
-const es6Renderer = require("express-es6-template-engine") 
-app.engine('html', es6Renderer); 
-app.set('views', 'templates'); 
-app.set('view engine', 'html');
+// const es6Renderer = require("express-es6-template-engine") 
+// app.engine('html', es6Renderer); 
+// app.set('views', 'templates'); 
+// app.set('view engine', 'html');
 
 app.use((req, res, next) => {
     res.append('Access-Control-Allow-Origin', ['*']);
