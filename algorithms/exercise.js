@@ -4,7 +4,7 @@
 // if number is divisible by 3 = fizz, divisibile by 5=buzz, 3 and 5 fizz buzz
 
 function fizzBuzz(num) {
-    for (var i=1; i<= num; i++) {
+    for (let i=1; i<= num; i++) {
         if (i % 3 === 0 && i % 5 ===0) console.log('FizzBuzz')
         else if (i % 3 === 0) console.log('Fizz');
         else if (i % 5 === 0) console.log('Buzz');
