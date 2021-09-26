@@ -3,7 +3,7 @@ body{
     color: #6E99E3;
     font-family: 'Varela Round', sans-serif;
 }
-/* ul {
+ul {
     list-style-type: none;
     margin: 10px;
     padding: 10px;
@@ -11,15 +11,9 @@ body{
       
 }
 
-
 li {
     float: left;
 
-} */
-
-.nav-bar {
-    display: flex;
-    float: right;
 }
 
 a {
