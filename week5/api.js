@@ -44,7 +44,7 @@ async function searchBook () {
                         reviewURL.href = bookReview
                         reviewURL.innerHTML = "Click here to read the review."
                         mainContainer.append(infoContainer)
-                        infoContainer.append(reviewURL)      
+                        infoContainer.append(reviewURL)       
                   }
 
         }

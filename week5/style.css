@@ -7,9 +7,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0; 
-    font-size: 1.5vw; 
-    
-    
+    font-size: 1.5vw;     
 }
 
 li {
@@ -32,42 +30,41 @@ a:hover{
     color: white;
   }
 
-input {
-    
-    color: black;
-    font-family: 'Varela Round', sans-serif;
-    font-size: medium;
-    
-}
-button { 
-    background-color: white;
-    color: black;
+input { 
+    color: #154aa4;
     font-family: 'Varela Round', sans-serif;
     font-size: medium;
     border-radius: 5px;
+    border-color: #154aa4;
+    margin: 5px;
+    width: 200px;
+}
+button { 
+    background-color: white;
+    color: #154aa4;
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #154aa4;
+    width: 150px;
     
-
 }
 .main-container {
     display: flex;
     flex-direction: column;  
-    right: 2px;
-    float: right;
-    width: 500px;
-    margin-right: 100px;
-    
-   
+    justify-content: center;
+    align-items: center; 
 }
 
 .book-title {
     margin-top: 30px;
 }
 
-.info-container {
+/* .info-container {
     display: flex;
     flex-direction: column;
     float: right;
-}
+} */
 
 h1 {
     display: flex;
