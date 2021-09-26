@@ -1,6 +1,6 @@
 body{
     background-color: #e3b86e;
-    color: white;
+    color: #6E99E3;
     font-family: 'Varela Round', sans-serif;
 }
 ul {
@@ -8,8 +8,7 @@ ul {
     margin: 10px;
     padding: 10px;
     font-size: 1.5vw;  
-    
-    
+      
 }
 
 li {
@@ -22,8 +21,13 @@ a {
     padding: 8px;
     font-family: 'Varela Round', sans-serif; 
     text-decoration: none;
-    color: white;
+    color:#6E99E3;
 }
+
+a:hover{
+    text-transform: uppercase;
+    color: white;
+  }
 
 .site-title {
     display: flex;
@@ -89,7 +93,7 @@ figcaption {
     text-align: center;
     font-size: 3vw;
     margin: 40px;
-    color: white;
+    color:#6E99E3;
     font-family: 'Varela Round', sans-serif;  
 }
 
