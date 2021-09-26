@@ -1,6 +1,6 @@
 body{
     background-color: #e3b86e;
-    color: white;
+    color:#6E99E3;
     font-family: 'Varela Round', sans-serif;
 }
 ul {
@@ -24,8 +24,13 @@ a {
     padding: 8px;
     font-family: 'Varela Round', sans-serif; 
     text-decoration: none;
-    color: white;
+    color:#6E99E3;
 }
+
+a:hover{
+    text-transform: uppercase;
+    color: white;
+  }
 
 input {
     
