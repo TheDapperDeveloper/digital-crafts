@@ -1,6 +1,6 @@
 body{
     background-color: #e3b86e;
-    color: white;
+    color:#6E99E3;
     font-family: 'Varela Round', sans-serif;
     padding: 0px;
     margin: 0px;
@@ -22,7 +22,7 @@ a {
     padding: 8px;
     font-family: 'Varela Round', sans-serif; 
     text-decoration: none;
-    color: white;
+    color:#6E99E3;
 }
 
 .main-container {
@@ -36,10 +36,28 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-    
+    align-items: center;      
 } 
+
+input { 
+    color: #154aa4;
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #154aa4;
+    margin: 5px;
+    width: 200px;
+}
+button { 
+    background-color: white;
+    color: #154aa4;
+    font-family: 'Varela Round', sans-serif;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #154aa4;
+    width: 150px;
+    
+}
 
 h1 {
     display: flex;

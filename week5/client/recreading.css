@@ -14,29 +14,31 @@ html, body, header {
 
 body{
     background-color: #e3b86e;
-    color: white;
+    color:#6E99E3;
     font-family: 'Varela Round', sans-serif;
 }
 ul {
-    display: flex;
-    flex-direction: row;
     list-style-type: none;
     margin: 0px;
     padding: 10px;
-    font-size: 1.5vw;     
-}
+    font-size: 1.5vw; 
+    display: flex;
+    flex-direction: row;
+} 
 
-li {
-    float: left;
-}
 
 a {
     display: block;
     padding: 8px;
     font-family: 'Varela Round', sans-serif; 
     text-decoration: none;
-    color: white;
+    color:#6E99E3;
 }
+
+a:hover{
+    text-transform: uppercase;
+    color: white;
+  }
 
 h1 {
     display: flex;
@@ -58,7 +60,7 @@ h1 {
     display: grid;
     grid-template-rows: 300px 300px;
     grid-template-columns: repeat(4, 300px);
-    row-gap: 100px; 
+    row-gap: 125px; 
     column-gap: 15px;
     margin: 100px; 
     border-radius: 10px;
@@ -71,20 +73,33 @@ img:hover {
         box-shadow: 0 0 10px teal;
     }
 
-h3 {
+h2 {
     display: flex;
-    color: white;
+    color:#6E99E3;
     font-family: 'Varela Round', sans-serif;
     justify-content: center;
     align-items: center;
     align-content: center; 
     margin: 10px;
+}
+
+h3 {
+    display: flex;
+    color: #6E99E3;
+    font-family: 'Varela Round', sans-serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    margin: 5px;
+    
 } 
+
+
 
 h4 {
     display: flex;
     flex-wrap: wrap;
-    color: white;
+    color:#6E99E3;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -98,7 +113,7 @@ p {
     flex-direction: column;
     text-align: center;
     margin: 190px;
-    color: #BCDBDA;
+    color: white;
     font-weight: bolder;
 }
 
