@@ -1,0 +1,22 @@
+.cards {
+    display: flex;
+    height: 800px;
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    font-size: large;   
+}
+
+img {
+    height: 300px;
+    width:400px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px ;
+    place-items: center;
+    column-gap: 100px;
+  }
