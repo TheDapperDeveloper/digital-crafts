@@ -13,10 +13,3 @@ img {
     height: 300px;
     width:400px;
 }
-
-.card-container {
-    display: grid;
-    grid-template-columns: 400px 400px 400px 400px ;
-    place-items: center;
-    column-gap: 100px;
-  }

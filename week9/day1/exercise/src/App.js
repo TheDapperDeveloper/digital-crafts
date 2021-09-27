@@ -7,6 +7,10 @@ function App() {
   return (
     <div className="App">
       <CarCard/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
     </div>
   );
 }
