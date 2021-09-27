@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import './CarCard.css';
+import NumberFormat from 'react-number-format';
 
 export default class CarCard extends Component {
      state = { Bugatti:{
@@ -41,7 +42,7 @@ export default class CarCard extends Component {
                 <h3>{this.state.Bugatti.model}</h3>
                 <h4>{this.state.Bugatti.engine}</h4>
                 <h4>{this.state.Bugatti.horsepower}</h4>
-                <h4>{this.state.Bugatti.price}</h4>
+                <h4><NumberFormat value={this.state.Bugatti.price} displayType="text" thousandSeparator={true} prefix="$" decimalScale={2}/></h4>
                 <img height="400px" width="500px" src={this.state.carImage}></img>
                 <h4>{this.state.Bugatti.transmission}</h4>
                 <h4>{this.state.Bugatti.topSpeed[0].US}</h4>
