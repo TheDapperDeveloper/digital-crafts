@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Cards from "./Cards";
+import "./Style.css";
 
 export default class CardContainer extends Component {
 
@@ -217,7 +218,7 @@ export default class CardContainer extends Component {
         const data = this.state.data[0].pokemon
         console.log(data)
         return (
-            <div>
+            <div className="card-container">
                 {data.map((pokemon) => (<Cards pokemon={pokemon}/>))}
             </div>
         )

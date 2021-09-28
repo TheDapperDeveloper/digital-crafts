@@ -27,7 +27,7 @@ export default class Cards extends Component {
                 <p>{name}</p>
                 <p>HP: {hp}</p>
                 <button onClick={this.flipPic}>Flip</button>
-                {this.props.pokemon.map((item, id) => (<button onClick={() => this.deletePoke(id)}>Delete</button>))}   
+                {/* {this.props.pokemon.map((item, id) => (<button onClick={() => this.deletePoke(id)}>Delete</button>))}    */}
             </div>
         )
     }
