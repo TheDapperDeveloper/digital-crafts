@@ -1,19 +1,33 @@
 import React, { Component } from 'react'
 
 export default class Cards extends Component {
+    state = {
+        flipped: false,
+    }
 
+    flipPic = () => {
+        this.setState({
+        flipped: !this.state.flipped
+    });
+    }
+
+    deletePoke = (id) => {
+        const newData = this.props.pokemon.filter(i => i.id !== id)
+        this.setState({pokemon: newData})
+
+    }
 
     render() {
+        const { flipped } = this.state;
+        const { name, hp, sprites} = this.props.pokemon;
+        
         return (
             <div className="cards">
-                {this.props.details.data[0].pokemon.map((poke, index) => (<h1>{poke.name}</h1>))}
-                <img src={this.props.details.data[0].pokemon[0].sprites.front}></img>
-                
-
-                {/* {this.props.details.data[0].pokemon[0].sprites.front.map((poke, index) => (<img src={this.poke.front}></img>))} */}
-               
-            
-                
+                <img src={flipped ? sprites.back : sprites.front} />
+                <p>{name}</p>
+                <p>HP: {hp}</p>
+                <button onClick={this.flipPic}>Flip</button>
+                {this.props.pokemon.map((item, id) => (<button onClick={() => this.deletePoke(id)}>Delete</button>))}   
             </div>
         )
     }

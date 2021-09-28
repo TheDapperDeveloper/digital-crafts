@@ -214,10 +214,11 @@ export default class CardContainer extends Component {
     
   
     render() {
-        
+        const data = this.state.data[0].pokemon
+        console.log(data)
         return (
             <div>
-            <Cards details={this.state}/>  
+                {data.map((pokemon) => (<Cards pokemon={pokemon}/>))}
             </div>
         )
     }
