@@ -12,10 +12,14 @@ function App() {
   const [zipcode, setZipCode] = useState("")
   const [username, setUserName] = useState("")
   const [email, setEmail] = useState("")
+
+  // SubmitButton = () => {
+    
+  // }
   
   return (
     <div className="App">
-      <Signup fName={firstName}/>
+      <Signup firstName = {setFirstName} lastName ={setLastName} dob ={setDob} address ={setAddress} city={setCity}  state={setState} zipcode={setZipCode} username={setUserName} email ={setEmail}/>
       <DB />
       
     </div>
