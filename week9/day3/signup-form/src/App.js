@@ -13,14 +13,18 @@ function App() {
   const [username, setUserName] = useState("")
   const [email, setEmail] = useState("")
 
-  // SubmitButton = () => {
+  const SubmitButton = () => {
+    setState({firstName: firstName})
     
-  // }
+  } //creating callback function in App. This will get data from the Signup child
+  //Then pass the callback function in App as prop to Signup
+  //Signup calls the function using props
+
   
   return (
     <div className="App">
-      <Signup firstName = {setFirstName} lastName ={setLastName} dob ={setDob} address ={setAddress} city={setCity}  state={setState} zipcode={setZipCode} username={setUserName} email ={setEmail}/>
-      <DB />
+      <Signup submitButton= {SubmitButton} firstName = {setFirstName} lastName ={setLastName} dob ={setDob} address ={setAddress} city={setCity}  state={setState} zipcode={setZipCode} username={setUserName} email ={setEmail}/>
+      <DB  firstName = {firstName}/>
       
     </div>
   );

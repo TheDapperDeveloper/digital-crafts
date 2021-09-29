@@ -16,7 +16,7 @@ function Signup (props) {
             <input onChange={(e) => props.zipcode({zipcode: e.target.value})} type="text" name="zipcode" placeholder="Zip Code" />
             <input onChange={(e) => props.username({username: e.target.value})} type="text" name="username" placeholder="Username" />
             <input onChange={(e) => props.email({email: e.target.value})} type="text" name="email" placeholder="E-mail" />
-            {/* <input onClick={() => SubmitButton(firstName)} type="button" value="Submit" /> */}
+            <button onClick={() => props.SubmitButton([])}>Submit</button>
             </form>
         </div>
     )
