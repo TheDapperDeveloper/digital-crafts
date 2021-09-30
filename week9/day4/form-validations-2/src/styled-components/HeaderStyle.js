@@ -4,6 +4,7 @@ export const UserPicture = styled.img`
   border-radius: 30%;
   height: 60px;
   width: 60px;
+  margin-right: 20px;
 `;
 
 export const HeaderContainer = styled.div`
@@ -11,6 +12,7 @@ export const HeaderContainer = styled.div`
   grid-area: header;
   display: flex;
   flex-direction: row;
+  font-family: 'Noto Sans Display', sans-serif;
 `;
 
 

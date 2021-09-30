@@ -7,6 +7,7 @@ import { ListItemsLink } from "../styled-components/SidebarStyle.js";
 export default function Sidebar() {
     return (
             <SidebarContainer>
+
              <ListItems><ListItemsLink href="index.html">Dashboard</ListItemsLink></ListItems>
              <ListItems><ListItemsLink href="index.html">Forms</ListItemsLink></ListItems>
              <ListItems><ListItemsLink href="index.html">UI Elements</ListItemsLink></ListItems>
