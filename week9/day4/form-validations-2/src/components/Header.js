@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { UserPicture } from "../styled-components/HeaderStyle.js"
+import { HeaderContainer } from "../styled-components/HeaderStyle.js"
 
 const URL ="https://randomuser.me/api/";
 export default function Header() {
@@ -10,7 +12,7 @@ export default function Header() {
     useEffect (() => {
         const getData = async() => {
             const getTheData = await fetch(URL, {
-                method: 'POST', 
+                method: 'GET', 
                 // mode: 'cors', 
                 cache: 'no-cache', 
                 credentials: 'same-origin',
@@ -20,7 +22,7 @@ export default function Header() {
             });
             const jsonData = await getTheData.json();
             console.log(jsonData);
-            setUser(jsonData?.results[0]?.picture?.thumbnail);
+            setUser(jsonData?.results[0]);
         };
         getData();
         return () => {};
@@ -29,12 +31,20 @@ export default function Header() {
     //useEffect(()=>{}) fire when we mount and anythime we call useState
 
     //useEffect(()=>{}, []) fire when we mount and only when we mount
-    
+
     //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value  
     return (
         <div>
-             <h1>Header</h1>
-             <img src={user} alt="" />
+             <HeaderContainer>
+             <UserPicture src={user?.picture?.large} alt="" />
+             <ul>Welcome {user?.name?.first} {""} {user?.name?.last}
+             <li>Dashboard</li>
+             <li>Forms</li>
+             <li>UI Elements</li>
+             <li>Charts</li>
+             <li>Tables</li>
+             </ul>
+             </HeaderContainer>
         </div>
     )
 }
