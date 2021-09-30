@@ -13,10 +13,11 @@ export const FormDiv = styled.div.attrs(props => ({
         flex-direction: column;
         align-items: center;
         align-content: center;
-        background-color: #E7D2CC;
+        background-color: #00806a;
         margin: auto;
         font-family: 'Noto Sans Display', sans-serif;
         border-radius: 10px;
+        margin-top: 25px;
     }
 `
 
@@ -25,10 +26,10 @@ export const UserInput = styled.input`
 text-align: center; margin: auto;
 height: 55px;
 width: 240px;
-background-color:#B9B7BD;
-border-color: #B9B7BD;
-background-color: ${(props) => (props.register ? "#868B8E":"")};
-border-color:${(props) => (props.register ? "#868B8E":"")};
+background-color:#004d40;
+border-color: #004d40;
+background-color: ${(props) => (props.register ? "#80cbc4":"")};
+border-color:${(props) => (props.register ? "#80cbc4":"")};
 color: white;
 border-radius: 10px;
 
@@ -40,6 +41,7 @@ export const FormLayout = styled.form`
 display: flex;
 flex-direction: column;
 align-items: center;
+color: white;
 
 `
 
@@ -53,6 +55,8 @@ export const StyledFields = styled.input.attrs(props => ({
         border-bottom: 1px solid #000000;
         font-family: 'Noto Sans Display', sans-serif;
         width: 80%;
+        background-color: white;
+        
         
     }
 `

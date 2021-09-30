@@ -8,11 +8,12 @@ export const UserPicture = styled.img`
 `;
 
 export const HeaderContainer = styled.div`
-  background-color: #424c58;
+  background-color: #80cbc4;
   grid-area: header;
   display: flex;
   flex-direction: row;
   font-family: 'Noto Sans Display', sans-serif;
+  color: #004d40;
 `;
 
 
