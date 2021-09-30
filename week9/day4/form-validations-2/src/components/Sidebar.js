@@ -1,9 +1,17 @@
 import React from 'react'
 
+import { SidebarContainer } from "../styled-components/SidebarStyle.js";
+import { ListItems } from "../styled-components/SidebarStyle.js";
+import { ListItemsLink } from "../styled-components/SidebarStyle.js";
+
 export default function Sidebar() {
     return (
-        <div>
-             <h1>Sidebar</h1>
-        </div>
-    )
+            <SidebarContainer>
+             <ListItems><ListItemsLink href="index.html">Dashboard</ListItemsLink></ListItems>
+             <ListItems><ListItemsLink href="index.html">Forms</ListItemsLink></ListItems>
+             <ListItems><ListItemsLink href="index.html">UI Elements</ListItemsLink></ListItems>
+             <ListItems><ListItemsLink href="index.html">Charts</ListItemsLink></ListItems>
+             <ListItems><ListItemsLink href="index.html">Tables</ListItemsLink></ListItems>
+             </SidebarContainer>
+    );
 }

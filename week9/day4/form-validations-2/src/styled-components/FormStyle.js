@@ -14,8 +14,6 @@ export const FormDiv = styled.div.attrs(props => ({
         align-items: center;
         align-content: center;
         background-color: #E7D2CC;
-        height: 295px;
-        width: 30%;
         margin: auto;
         font-family: 'Noto Sans Display', sans-serif;
         border-radius: 10px;

@@ -10,3 +10,11 @@ export const MainContainer = styled.div`
     "sidebar footer footer footer";
     grid-template-rows: auto;
 `;
+
+export const FormDiv = styled.div.attrs(props => ({
+    className:props.className,
+}))`
+    & .App {
+        height: 100vh;
+    }
+`

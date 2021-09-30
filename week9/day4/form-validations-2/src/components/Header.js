@@ -37,13 +37,7 @@ export default function Header() {
         <div>
              <HeaderContainer>
              <UserPicture src={user?.picture?.large} alt="" />
-             <ul>Welcome {user?.name?.first} {""} {user?.name?.last}
-             <li>Dashboard</li>
-             <li>Forms</li>
-             <li>UI Elements</li>
-             <li>Charts</li>
-             <li>Tables</li>
-             </ul>
+             <h3>Welcome {user?.name?.first} {""} {user?.name?.last} </h3>
              </HeaderContainer>
         </div>
     )
