@@ -37,7 +37,8 @@ export default function Header(props) {
     //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value  
     return (
         <HeaderContainer>
-            <button onClick={() => setViewSidebar(!viewSidebar)}>Show Sidebar</button>
+            <button onClick={() => setViewSidebar(!viewSidebar)}>
+            {viewSidebar ? "Hide Sidebar": "Show Sidebar"}</button>
              <UserPicture src={user?.picture?.large} alt="" />
              <h3>Welcome, {user?.name?.first} {""} {user?.name?.last}! </h3>      
         </HeaderContainer>
