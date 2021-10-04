@@ -6,8 +6,11 @@ import { Link } from 'react-router-dom';
 
 import '../styled-components/PageStyle.css';
 
-export default function Sidebar() {
+export default function Sidebar(props) {
+    const viewSidebar = props.viewSidebar
     return (
+        <>
+        {viewSidebar ? (
         <SidebarContainer>
                <Link to="/">
                 <ListItems>Home</ListItems>
@@ -18,6 +21,8 @@ export default function Sidebar() {
                 <Link to="/form">
                 <ListItems>Form</ListItems>
                 </Link>
-             </SidebarContainer>
+             </SidebarContainer> 
+            ) : ""}
+             </>
     );
 }

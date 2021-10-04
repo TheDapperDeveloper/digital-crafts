@@ -4,8 +4,9 @@ import { HeaderContainer } from "../styled-components/HeaderStyle.js"
 import '../styled-components/PageStyle.css';
 
 const URL ="https://randomuser.me/api/";
-export default function Header() {
-
+export default function Header(props) {
+    const viewSidebar = props.viewSidebar
+    const setViewSidebar = props.setViewSidebar
     const [user, setUser] = useState({});
     // useEffect is a hook
     //hook that fires when the component is mounted
@@ -36,6 +37,7 @@ export default function Header() {
     //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value  
     return (
         <HeaderContainer>
+            <button onClick={() => setViewSidebar(!viewSidebar)}>Show Sidebar</button>
              <UserPicture src={user?.picture?.large} alt="" />
              <h3>Welcome, {user?.name?.first} {""} {user?.name?.last}! </h3>      
         </HeaderContainer>

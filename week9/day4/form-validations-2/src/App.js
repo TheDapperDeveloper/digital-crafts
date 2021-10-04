@@ -8,19 +8,20 @@ import ErrorPage from './components/ErrorPage';
 
 import { FormDiv } from './styled-components/AppStyle.js';
 import { MainContainer } from "./styled-components/AppStyle.js";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import { useState } from "react"
 
 
 function App() {
+  const [viewSidebar, setViewSidebar] = useState(true)
   return (
     <Router>
       <Switch>
 
         <FormDiv className="App">
           <MainContainer>
-            <Header/>
-            <Sidebar/>
+            <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar}/>
+            <Sidebar viewSidebar={viewSidebar}/>
             <Route path="/form">
               <Form/>
             </Route>
@@ -31,6 +32,9 @@ function App() {
               <Dashboard/>
             </Route>
             <Route path="*">
+              <Redirect to="/errorpage"/>
+            </Route>
+            <Route path="/errorpage">
               <ErrorPage/>
             </Route>
           </MainContainer>
