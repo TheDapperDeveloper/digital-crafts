@@ -8,7 +8,7 @@ export const SidebarContainer = styled.div`
   width: 50%;
 `;
 
-export const ListItems = styled.li`
+export const ListItems = styled.p`
     list-style-type: none;
     margin: 0;
     margin-bottom: 100px;
@@ -18,11 +18,6 @@ export const ListItems = styled.li`
     font-family: 'Noto Sans Display', sans-serif;
     display: flex;
     justify-content: center;
-    
-
-`;
-
-export const ListItemsLink = styled.a`
     text-decoration: none;
     color: white;
     :hover {
