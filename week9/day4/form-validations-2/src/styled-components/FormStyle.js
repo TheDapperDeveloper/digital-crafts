@@ -18,23 +18,28 @@ export const FormDiv = styled.div.attrs(props => ({
         font-family: 'Noto Sans Display', sans-serif;
         border-radius: 10px;
         margin-top: 25px;
+        background-color: gray;
+        background-image: -webkit-linear-gradient(top left, #583e89, #0e2269); 
+        color: white;
+        height: 350px;
+        width: 225px;
     }
 `
 
 
 export const UserInput = styled.input`
 text-align: center; margin: auto;
-height: 55px;
-width: 240px;
+height: 40px;
+width: 150px;
 background-color:#004d40;
-border-color: #004d40;
-background-color: ${(props) => (props.register ? "#80cbc4":"")};
-border-color:${(props) => (props.register ? "#80cbc4":"")};
+background-image: -webkit-linear-gradient(bottom left, #ff5f78, #f89d6c);
+border: none;
 color: white;
-border-radius: 10px;
-
+border-radius: 20px;
 font-family: 'Noto Sans Display', sans-serif;
-font-weight: bold
+font-weight: bolder;
+margin-bottom: 5px;
+margin-top: 10px;
 `;
 
 export const FormLayout = styled.form`
@@ -51,13 +56,27 @@ export const StyledFields = styled.input.attrs(props => ({
     &.fields {
         margin-bottom: 10px;
         background: transparent;
+        border-radius: 10px;
         border: none;
-        border-bottom: 1px solid #000000;
+        padding: 10px;
         font-family: 'Noto Sans Display', sans-serif;
+        font-style: italic;
         width: 80%;
         background-color: white;
-        
-        
+               
+    }
+`
+
+export const ForgotPassword = styled.h4`
+margin: 5px;
+`;
+
+export const Checkbox = styled.input.attrs(props => ({
+    className: props.className,
+}))`
+    &.rememberMe {
+        margin-bottom: 10px;
+     left: 250px;
     }
 `
 

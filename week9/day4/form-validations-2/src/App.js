@@ -4,6 +4,8 @@ import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Dashboard from "./components/Dashboard";
 import ErrorPage from './components/ErrorPage';
+import Account from './components/Account'
+import Garage from './components/Garage'
 
 
 import { FormDiv } from './styled-components/AppStyle.js';
@@ -36,6 +38,12 @@ function App() {
             </Route>
             <Route path="/errorpage">
               <ErrorPage/>
+            </Route>
+            <Route path="/account">
+              <Account/>
+            </Route>
+            <Route path="/garage">
+              <Garage/>
             </Route>
           </MainContainer>
         </FormDiv>

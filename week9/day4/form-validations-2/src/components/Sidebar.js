@@ -13,13 +13,19 @@ export default function Sidebar(props) {
         {viewSidebar ? (
         <SidebarContainer>
                <Link to="/">
-                <ListItems>Home</ListItems>
+                    <ListItems>Home</ListItems>
                 </Link>
                 <Link to="/dashboard">
-                <ListItems>Dasboard</ListItems>
+                    <ListItems>Dashboard</ListItems>
                 </Link>
                 <Link to="/form">
-                <ListItems>Form</ListItems>
+                    <ListItems>Form</ListItems>
+                </Link>
+                <Link to="/account">
+                    <ListItems>Account</ListItems>
+                </Link>
+                <Link to="/garage">
+                    <ListItems>Garage</ListItems>
                 </Link>
              </SidebarContainer> 
             ) : ""}
