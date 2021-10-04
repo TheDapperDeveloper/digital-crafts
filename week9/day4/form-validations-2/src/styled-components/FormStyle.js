@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
-export const FormContainer = styled.div`
-    grid-area: formcontainer;
-`
+
 
 
 export const FormDiv = styled.div.attrs(props => ({
     className:props.className,
 }))`
     &.main-div {
+        grid-area: formcontainer;
+        justify-content: center;
         display:flex;
         flex-direction: column;
         align-items: center;

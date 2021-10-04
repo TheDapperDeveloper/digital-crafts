@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
   grid-area: sidebar;
-  background-color: #004d40;
+  background-color: #565F70;
   list-style: none;
   height: 200vh;
   width: 50%;
@@ -11,17 +11,19 @@ export const SidebarContainer = styled.div`
 export const ListItems = styled.p`
     list-style-type: none;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 50px;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-decoration: none;
     font-family: 'Noto Sans Display', sans-serif;
     display: flex;
     justify-content: center;
     text-decoration: none;
+    width: 100%;
     color: white;
     :hover {
-      color:black;
+      background-color:#f89d6c;
       cursor:pointer;
     }
 `;

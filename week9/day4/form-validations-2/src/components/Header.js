@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { UserPicture } from "../styled-components/HeaderStyle.js"
 import { HeaderContainer } from "../styled-components/HeaderStyle.js"
+import { HideButton } from '../styled-components/HeaderStyle.js';
+import { Welcome } from '../styled-components/HeaderStyle.js';
 import '../styled-components/PageStyle.css';
 
 const URL ="https://randomuser.me/api/";
@@ -37,10 +39,10 @@ export default function Header(props) {
     //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value  
     return (
         <HeaderContainer>
-            <button onClick={() => setViewSidebar(!viewSidebar)}>
-            {viewSidebar ? "Hide Sidebar": "Show Sidebar"}</button>
-             <UserPicture src={user?.picture?.large} alt="" />
-             <h3>Welcome, {user?.name?.first} {""} {user?.name?.last}! </h3>      
+            <HideButton onClick={() => setViewSidebar(!viewSidebar)}>
+            {viewSidebar ? "Hide Sidebar": "Show Sidebar"}</HideButton>
+             <Welcome>Welcome, {user?.name?.first} {""} {user?.name?.last}! </Welcome>
+             <UserPicture src={user?.picture?.large} alt="" />      
         </HeaderContainer>
     )
 }

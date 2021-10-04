@@ -5,6 +5,7 @@ import { StyledFields } from '../styled-components/FormStyle';
 import { Checkbox } from '../styled-components/FormStyle';
 import { FormDiv } from '../styled-components/FormStyle';
 import { ForgotPassword } from '../styled-components/FormStyle';
+
 import '../styled-components/PageStyle.css';
 
 export default function Form() {
@@ -25,7 +26,7 @@ export default function Form() {
                 <ForgotPassword>New here? Sign up</ForgotPassword>
                 
             </FormLayout>
-            
         </FormDiv>
     )
 }
+
