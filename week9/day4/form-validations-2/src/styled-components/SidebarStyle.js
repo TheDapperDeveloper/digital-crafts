@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
   grid-area: sidebar;
@@ -8,7 +9,7 @@ export const SidebarContainer = styled.div`
   width: 50%;
 `;
 
-export const ListItems = styled.p`
+export const SidebarLink = styled(Link)`
     list-style-type: none;
     margin: 0;
     margin-bottom: 50px;

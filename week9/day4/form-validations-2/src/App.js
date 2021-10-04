@@ -1,8 +1,8 @@
 import Form from './components/Form';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import Home from './components/Home';
 import Dashboard from "./components/Dashboard";
+import Home from './components/Home';
 import ErrorPage from './components/ErrorPage';
 import Account from './components/Account'
 import Garage from './components/Garage'
@@ -10,7 +10,7 @@ import Garage from './components/Garage'
 
 import { FormDiv } from './styled-components/AppStyle.js';
 import { MainContainer } from "./styled-components/AppStyle.js";
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { useState } from "react"
 
 
@@ -22,28 +22,26 @@ function App() {
 
         <FormDiv className="App">
           <MainContainer>
+            <Route exact path="/"></Route>
             <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar}/>
             <Sidebar viewSidebar={viewSidebar}/>
-            <Route path="/form">
+            <Route path="/login">
               <Form/>
             </Route>
-            <Route exact path="/">
-             <Home/>
+            <Route path="/home">
+              <Home/>
             </Route>
             <Route path="/dashboard">
               <Dashboard/>
-            </Route>
-            <Route path="*">
-              <Redirect to="/errorpage"/>
-            </Route>
-            <Route path="/errorpage">
-              <ErrorPage/>
             </Route>
             <Route path="/account">
               <Account/>
             </Route>
             <Route path="/garage">
               <Garage/>
+            </Route>
+            <Route path="/errorpage">
+              <ErrorPage/>
             </Route>
           </MainContainer>
         </FormDiv>
