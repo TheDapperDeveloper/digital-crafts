@@ -20,7 +20,7 @@ const rootReducer = (state=initialState, action) => {
         case "GET_MUSTANG":
             return state.mustang;
         case "CHANGE_KAWASAKI":
-            return {...state, kawasaki: "Ninja 250"}
+            return {...state, kawasaki: "Ninja 250"};
         default:
             return state
     }
