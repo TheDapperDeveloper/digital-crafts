@@ -9,3 +9,4 @@ export const DashboardLayout = styled.div.attrs(props => ({
         align-items: center;
     }
 `
+
