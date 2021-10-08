@@ -29,6 +29,26 @@ function Anagram(string1, string2) {
   return compare(string1) == compare(string2);
 }
 
-console.log(Anagram(string1, string2))
-console.log(Anagram(string3, string4))
-console.log(Anagram(string5, string6))
+// console.log(Anagram(string1, string2));
+// console.log(Anagram(string3, string4));
+// console.log(Anagram(string5, string6));
+
+// write a function that capitalizes the first character of every word in a string
+
+phrase1 = "randy doesnt like giving algos";
+phrase2 = "arent you glad its friday";
+phrase3 = "i wonder whats for lunch today";
+
+function Capital(string) {
+  const arr = string.split(" "); //split the above string into an array of strings when a blank space is encountered
+    for (var i=0; i < arr.length; i++) { //loop through each element of the array and capitalize the first letter.
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)  //slice slices a string from a specificed start position until the end
+    }
+    const newString = arr.join(" ") //Join all the elements of the array back into a string 
+                                //using a blankspace as a separator 
+    console.log(newString)
+                            }
+
+Capital(phrase1);
+Capital(phrase2);
+Capital(phrase3);
