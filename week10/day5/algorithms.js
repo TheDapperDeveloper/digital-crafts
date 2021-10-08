@@ -40,9 +40,10 @@ phrase2 = "arent you glad its friday";
 phrase3 = "i wonder whats for lunch today";
 
 function Capital(string) {
-  const arr = string.split(" "); //split the above string into an array of strings when a blank space is encountered
+  const arr = string.split(" "); //split the string into an array of strings when a blank space is encountered
     for (var i=0; i < arr.length; i++) { //loop through each element of the array and capitalize the first letter.
         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)  //slice slices a string from a specificed start position until the end
+        console.log(arr[i])
     }
     const newString = arr.join(" ") //Join all the elements of the array back into a string 
                                 //using a blankspace as a separator 
@@ -52,3 +53,9 @@ function Capital(string) {
 Capital(phrase1);
 Capital(phrase2);
 Capital(phrase3);
+
+//Write a function that finds the missing number in a given integer array
+
+let arr1 = [1,2,3,4,5,6,7,8,10];
+
+//expect result: 9
