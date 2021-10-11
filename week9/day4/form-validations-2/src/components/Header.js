@@ -44,20 +44,20 @@ export default function Header(props) {
 
   //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value
 
-  const firstName = useSelector((state) => state.UserData.name.first);
-  const lastName = useSelector((state) => state.UserData.name.last);
-  const picture = useSelector((state) => state.UserData.picture.large);
+  // const firstName = useSelector((state) => state.UserData.name.first);
+  // const lastName = useSelector((state) => state.UserData.name.last);
+  // const picture = useSelector((state) => state.UserData.picture.large);
 
   return (
     <HeaderContainer>
-      <HideButton onClick={() => setViewSidebar(!viewSidebar)}>
+      {/* <HideButton onClick={() => setViewSidebar(!viewSidebar)}>
         {viewSidebar ? "Hide Sidebar" : "Show Sidebar"}
       </HideButton>
 
       <Welcome>
         Welcome, {firstName} {""} {lastName}!{" "}
       </Welcome>
-      <UserPicture src={picture} alt="" />
+      <UserPicture src={picture} alt="" /> */}
       {/* <button onClick={() => dispatch({type:"SET_USERNAME"})}>Set Username</button> 
              <button onClick={() => dispatch({type:"SET_RESTAURANTS", payload: ["Mastro's", "Cheesecake Factory", "The Flying Biscuit", "Butcher and Singer", "Five Guys"]})}>Set Restaurant</button>    */}
     </HeaderContainer>

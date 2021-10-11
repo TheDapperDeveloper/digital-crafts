@@ -1,4 +1,6 @@
-const initialState = {}
+const initialState = {
+    userData: {}
+}
 
 
 const UserData = (state = initialState, action) => {
