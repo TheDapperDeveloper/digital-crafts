@@ -44,16 +44,16 @@ export default function Header(props) {
 
   //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value
 
-  const firstName = useSelector((state) => state.UserData.userData.name.first);
-  const lastName = useSelector((state) => state.UserData.userData.name.last);
-  const picture = useSelector((state) => state.UserData.userData.picture.large);
+  const firstName = useSelector((state) => state.UserData.name.first);
+  const lastName = useSelector((state) => state.UserData.name.last);
+  const picture = useSelector((state) => state.UserData.picture.large);
 
   return (
     <HeaderContainer>
       <HideButton onClick={() => setViewSidebar(!viewSidebar)}>
         {viewSidebar ? "Hide Sidebar" : "Show Sidebar"}
       </HideButton>
-        
+
       <Welcome>
         Welcome, {firstName} {""} {lastName}!{" "}
       </Welcome>
