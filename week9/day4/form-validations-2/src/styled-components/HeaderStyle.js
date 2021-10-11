@@ -14,6 +14,7 @@ export const Welcome = styled.h3`
 
 export const HeaderContainer = styled.div`
   background-color: #565F70;
+  align-items: center;
   grid-area: header;
   display: flex;
   flex-direction: row;
@@ -35,6 +36,12 @@ font-family: 'Noto Sans Display', sans-serif;
 font-weight: bolder;
 margin-top: 10px;
 margin-left: 10px;
+`;
+
+export const NameContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 1500px;
 `;
 
 

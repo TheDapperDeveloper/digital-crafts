@@ -6,26 +6,6 @@ import { useSelector } from 'react-redux';
 
 export default function Chart() {
 
-    // const exoticCars = {
-    //     x: ['Lamborghini', 'Rolls Royce', 'Aston Martin'],
-    //     y: [20, 14, 23],
-    //     name: 'Exotic Cars',
-    //     type: 'bar', 
-    //     marker: {
-    //         color: 'rgb(255,95,120)'
-    //     }
-    //   };
-      
-    //  const luxuryWatches = {
-    //     x: ['Audemars Piquet', 'Patek Phillipe', 'Hublot'],
-    //     y: [12, 18, 29],
-    //     name: 'Luxury Watches',
-    //     type: 'bar',
-    //     marker: {
-    //         color: 'rgb(59,24,140)'
-    //     }
-    //   };
-
     const cars = useSelector ((state) => state.GraphData.exoticCars)
     const watches = useSelector((state) => state.GraphData.luxuryWatches)
 
