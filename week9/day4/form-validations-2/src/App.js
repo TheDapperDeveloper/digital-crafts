@@ -14,7 +14,10 @@ import { useState } from "react";
 
 function App() {
   const [viewSidebar, setViewSidebar] = useState(true);
-  const register = true
+  const register = true;
+
+  const user = JSON.parse(localStorage.getItem("supabase.auth.token"));
+  console.log({ user });
 
   return (
     <Router>

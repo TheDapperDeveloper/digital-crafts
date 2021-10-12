@@ -1,7 +1,4 @@
-const initialState = {
-    userData: {}
-}
-
+const initialState = {}
 
 const UserData = (state = initialState, action) => {
   switch (action.type) {

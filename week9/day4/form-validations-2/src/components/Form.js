@@ -6,6 +6,7 @@ import { Checkbox } from "../styled-components/FormStyle";
 import { FormDiv } from "../styled-components/FormStyle";
 import { ForgotPassword } from "../styled-components/FormStyle";
 import { createClient } from "@supabase/supabase-js";
+import { useHistory } from "react-router-dom";
 
 import "../styled-components/PageStyle.css";
 
@@ -17,6 +18,8 @@ const supabase = createClient(
 
 export default function Form(props) {
   const [formData, setFormData] = useState({});
+  const history = useHistory()
+  
   console.log(formData);
 
   //login the user
@@ -26,7 +29,11 @@ export default function Form(props) {
         email: formData.username,
         password: formData.password,
     });
-    console.log(user, session, error)
+   if (session) {
+       history.push("/dashboard");   
+   } else {
+       alert(error.message);
+   }
   };
 
   //register the user

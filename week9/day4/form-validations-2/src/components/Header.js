@@ -12,6 +12,7 @@ export default function Header(props) {
   const viewSidebar = props.viewSidebar;
   const setViewSidebar = props.setViewSidebar;
   const dispatch = useDispatch();
+  const userData = useSelector((state) => state.UserData)
 
   // useEffect is a hook
   //hook that fires when the component is mounted
@@ -45,23 +46,17 @@ export default function Header(props) {
   //useEffect(()=>{}, [variable]) fire when we mount and only when variable changes in value
 
 
-  // const firstName = useSelector((state) => state.UserData.name.first);
-  // const lastName = useSelector((state) => state.UserData.name.last);
-  // const picture = useSelector((state) => state.UserData.picture.large);
-
   return (
     <HeaderContainer>
-      {/* <HideButton onClick={() => setViewSidebar(!viewSidebar)}>
+      <HideButton onClick={() => setViewSidebar(!viewSidebar)}>
         {viewSidebar ? "Hide Sidebar" : "Show Sidebar"}
       </HideButton>
     <NameContainer>
       <Welcome>
-        Welcome, {firstName} {""} {lastName}!{" "}
+        Welcome, {userData?.name?.first} {""} {userData?.name?.last}!{" "}
       </Welcome>
-      <UserPicture src={picture} alt="" />
-      </NameContainer> */}
-      {/* <button onClick={() => dispatch({type:"SET_USERNAME"})}>Set Username</button> 
-             <button onClick={() => dispatch({type:"SET_RESTAURANTS", payload: ["Mastro's", "Cheesecake Factory", "The Flying Biscuit", "Butcher and Singer", "Five Guys"]})}>Set Restaurant</button>    */}
+      <UserPicture src={userData?.picture?.thumbnail} alt="" />
+      </NameContainer>
     </HeaderContainer>
   );
 }
