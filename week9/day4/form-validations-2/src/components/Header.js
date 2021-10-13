@@ -12,32 +12,32 @@ export default function Header(props) {
   const viewSidebar = props.viewSidebar;
   const setViewSidebar = props.setViewSidebar;
   const dispatch = useDispatch();
-  const userData = useSelector((state) => state.UserData)
+  const userData = useSelector((state) => state.UserData.username)
 
   // useEffect is a hook
   //hook that fires when the component is mounted
   // needed when data needs to appear when the page is loaded (APIs, fetching etc)
-  useEffect(() => {
-    const getData = async () => {
-      const getTheData = await fetch(URL, {
-        method: "GET",
-        // mode: 'cors',
-        cache: "no-cache",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const jsonData = await getTheData.json();
-      console.log(jsonData);
-      dispatch({
-        type: "GET_USERDATA",
-        payload: { ...jsonData.results[0] },
-      });
-    };
-    getData();
-    return () => {};
-  }, []); // square brackets = dependency array, useEffect run one time. Only run if item in array has changed
+  // useEffect(() => {
+  //   const getData = async () => {
+  //     const getTheData = await fetch(URL, {
+  //       method: "GET",
+  //       // mode: 'cors',
+  //       cache: "no-cache",
+  //       credentials: "same-origin",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
+  //     const jsonData = await getTheData.json();
+  //     console.log(jsonData);
+  //     dispatch({
+  //       type: "GET_USERDATA",
+  //       payload: { ...jsonData.results[0] },
+  //     });
+  //   };
+  //   getData();
+  //   return () => {};
+  // }, []); // square brackets = dependency array, useEffect run one time. Only run if item in array has changed
 
   //useEffect(()=>{}) fire when we mount and anytime we call useState
 
@@ -53,7 +53,7 @@ export default function Header(props) {
       </HideButton>
     <NameContainer>
       <Welcome>
-        Welcome, {userData?.name?.first} {""} {userData?.name?.last}!{" "}
+        Welcome, {userData}
       </Welcome>
       <UserPicture src={userData?.picture?.thumbnail} alt="" />
       </NameContainer>

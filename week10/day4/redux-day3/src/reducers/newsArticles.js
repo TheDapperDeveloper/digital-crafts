@@ -1,8 +1,9 @@
+import { FILL_INFO } from "../action-types/newsarticles-types";
 const initialState = [];
 
 const NewsArticles = (state = initialState, action) => {
   switch (action.type) {
-    case "FILL_INFO":
+    case FILL_INFO:
       return [{ name: "news stuff" }];
     default:
       return state;

@@ -9,6 +9,7 @@ import { createClient } from "@supabase/supabase-js";
 import { useHistory } from "react-router-dom";
 
 import "../styled-components/PageStyle.css";
+import { useDispatch } from "react-redux";
 
 // Create a single supabase client for interacting with your database
 const supabase = createClient(
@@ -18,22 +19,24 @@ const supabase = createClient(
 
 export default function Form(props) {
   const [formData, setFormData] = useState({});
-  const history = useHistory()
-  
+  const history = useHistory();
+  const dispatch = useDispatch()
+
   console.log(formData);
 
   //login the user
   const login = async (e) => {
     e.preventDefault();
     const { user, session, error } = await supabase.auth.signIn({
-        email: formData.username,
-        password: formData.password,
+      email: formData.username,
+      password: formData.password,
     });
-   if (session) {
-       history.push("/dashboard");   
-   } else {
-       alert(error.message);
-   }
+    if (session) {
+      history.push("/dashboard");
+      dispatch({type: "SET_USER", payload: formData.username })
+    } else {
+      alert(error.message);
+    }
   };
 
   //register the user
@@ -44,7 +47,13 @@ export default function Form(props) {
       email: formData.username,
       password: formData.password,
     });
+    if (user) {
+      history.push("/login");
+    } else {
+      alert(error.message);
+    }
   };
+
   return (
     <FormDiv className="main-div">
       <FormLayout action="">

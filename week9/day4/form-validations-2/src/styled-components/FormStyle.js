@@ -3,10 +3,7 @@ import styled from "styled-components"
 
 
 
-export const FormDiv = styled.div.attrs(props => ({
-    className:props.className,
-}))`
-    &.main-div {
+export const FormDiv = styled.div`
         grid-area: formcontainer;
         justify-content: center;
         display:flex;
@@ -23,7 +20,6 @@ export const FormDiv = styled.div.attrs(props => ({
         color: white;
         height: 350px;
         width: 225px;
-    }
 `
 
 
