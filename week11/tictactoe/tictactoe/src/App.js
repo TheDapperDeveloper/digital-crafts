@@ -2,7 +2,24 @@ import { BoardContainer, CellContainer, MessageContainer, RestartButton, WinnerM
 
 import "./Style.css";
 
-function App() {
+function App(value, onClick) {
+
+  const X_CLASS = 'x'
+  const CIRCLE_CLASS = 'circle'
+  let circleTurn
+
+  cellElements.forEach
+   
+  const handleClick = (e) => {
+    const cell = e.target
+    const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
+    placeMark(cell, currentClass)
+  }
+
+  function placeMark (cell, currentClass) {
+    cell.classList.add(currentClass)
+  }
+
   return (
     <>
     <BoardContainer className="board">
