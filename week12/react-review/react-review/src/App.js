@@ -23,12 +23,12 @@ const data = [
 ];
 
 function App() {
-  const [students, setStudents] = useState(data);
+  // const [students, setStudents] = useState(data);
   return (
     <div className="App">
       <h1>App.js</h1>
       <h3>Data starts here</h3>
-      <StudentContainer students={students} />
+      <StudentContainer />
     </div>
   );
 }
