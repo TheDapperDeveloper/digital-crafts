@@ -11,3 +11,5 @@ Redux makes it simpler to pass props to different components. You avoid props dr
 createStore is a function from redux that creates store. The store is a big object and state is an object so we access items by using dot notation.
 
 Moving from local to global state removes the need for props
+
+to move action to reducer you need to use a payload
