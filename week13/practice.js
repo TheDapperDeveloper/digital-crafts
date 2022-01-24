@@ -47,3 +47,18 @@ function dupNum(arr) {
   //return result (2)
 }
 dupNum([1, 2, 2, 3, 3, 4, 5]);
+
+//Find how many times a letter appears in a sentence
+
+function charCount(str) {
+  let total = 0;
+  for (i = 0; i < str.length; i++) {
+    let char = str[i].toLowerCase();
+    if (char === "a") {
+      total += 1;
+    }
+  }
+  return total;
+}
+
+console.log(charCount("AAAAaaaa"));
